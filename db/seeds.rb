@@ -5,3 +5,31 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+
+photographer_1 = Photographer.create!(
+  first_name: "Marc",
+  last_name: "Yebra",
+  email: "marc@gmail.com",
+  description: "I love taking fashion photos!",
+  location: "Cambridge"
+)
+
+photographer_2 = Photographer.create!(
+  first_name: "Paxton",
+  last_name: "Layman",
+  email: "Paxton@gmail.com",
+  description: "I love taking photos of families!",
+  location: "Downtown Boston"
+)
+
+photographer_3 = Photographer.create!(
+  first_name: "Alex",
+  last_name: "Champion",
+  email: "alex@gmail.com",
+  description: "I love taking portraits!",
+  location: "Beacon Hill"
+)
+
+

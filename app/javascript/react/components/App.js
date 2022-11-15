@@ -1,7 +1,15 @@
 import React from 'react'
+import PhotographerIndex from './PhotographerIndex'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 export const App = (props) => {
-  return (<h1>Make It So React</h1>)
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/photographers" component={PhotographerIndex} />
+      </Switch>
+    </BrowserRouter>
+  )
 }
 
 export default App
