@@ -1,0 +1,13 @@
+.top-bar {
+  background-color:  #8A5D29; 
+}
+
+.top-bar a{
+  color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+
+.top-bar ul {
+  background-color: #8A5D29;
+}
