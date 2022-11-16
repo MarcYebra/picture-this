@@ -10,11 +10,11 @@ const PhotographerIndex = (props) => {
       const response = await fetch("/api/v1/photographers")
       if (!response.ok) {
         const errorMessage = `${response.status} (${response.statusText})`
+        const error = new Error(errorMessage)
         throw new Error(errorMessage)
       }
       const responseBody = await response.json()
       setPhotographers(responseBody.photographers)
-
     } catch (error) {
       console.error(`Error in Fetch: ${error.message}`)
     }
@@ -26,7 +26,6 @@ const PhotographerIndex = (props) => {
     return (
       <PhotographerTile
         key = {photographer.id}
-        id = {photographer.id}
         first_name = {photographer.first_name}
         last_name = {photographer.last_name}
         email = {photographer.email}
@@ -37,9 +36,11 @@ const PhotographerIndex = (props) => {
   })
 
 return (
-  <div>
+  <div className='home-page-layout'>
     <h1>Photographers Index Page</h1>
-      {photographerTiles} 
+    <div className='photographer-tiles'>
+    {photographerTiles}
+    </div>
   </div>
   ) 
 }
