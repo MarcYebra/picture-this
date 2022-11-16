@@ -9,15 +9,15 @@
 <body>
   
   <nav class="top-bar">
-    <h1><a href="/">Picture This</a></h1>
+    <a href="/" class="logo"><%= image_tag("logo.png", alt: "Logo")%></a>
 
     <section class="top-bar-section">
       <ul class="right">
         <%- if current_user -%>
           <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
         <%- else -%>
-          <%= link_to 'Sign Up', new_user_registration_path %>
-          <%= link_to 'Sign In', new_user_session_path %>
+          <%= link_to 'Sign In', new_user_session_path, :class => "button" %>
+          <%= link_to 'Sign Up', new_user_registration_path , :class => "button" %>
         <%- end -%>
       </ul>
     </section>
@@ -40,6 +40,21 @@
   <%- end -%>
   <%= javascript_pack_tag 'application' %>
   
-  <%= yield :extra_footer %>
+  <footer>
+  <div class="footer">
+  <div class="footer-info">
+    <p>
+      <a class="about-us" href="/photographers">About</a>   |   
+      <a class="contact" href="/photographers">Contact</a>
+  </div>
+    <p> 
+    <div class="icons">
+      <a href="https://www.pinterest.com/Picture_This_/" target="_blank" class="pinterest"><%= image_tag("Pinterest.png", alt: "pinterest")%></a>
+      <a href="https://www.instagram.com/instagram/?hl=en" target="_blank" class="instagram"><%= image_tag("Instagram.png", alt: "instagram")%></a>
+      <a href="https://www.linkedin.com/in/marcyebra/" target="_blank" class="linkedin"><%= image_tag("Linkedin.png", alt: "Linkedin")%></a>
+    </div>
+  </div>
+  </footer>
+
 </body>
 </html>
