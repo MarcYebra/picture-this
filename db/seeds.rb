@@ -13,7 +13,8 @@ photographer_1 = Photographer.create!(
   last_name: "Yebra",
   email: "marc@gmail.com",
   description: "I love taking fashion photos!",
-  location: "Cambridge"
+  location: "Cambridge",
+  profile_photo: "app/assets/images/Marc.jpg"
 )
 
 photographer_2 = Photographer.create!(
@@ -21,7 +22,8 @@ photographer_2 = Photographer.create!(
   last_name: "Layman",
   email: "Paxton@gmail.com",
   description: "I love taking photos of families!",
-  location: "Downtown Boston"
+  location: "Downtown Boston",
+  profile_photo: "app/assets/images/Paxton.jpg"
 )
 
 photographer_3 = Photographer.create!(
@@ -29,7 +31,8 @@ photographer_3 = Photographer.create!(
   last_name: "Champion",
   email: "alex@gmail.com",
   description: "I love taking portraits!",
-  location: "Beacon Hill"
+  location: "Beacon Hill",
+  profile_photo: "app/assets/images/Alex.jpg"
 )
 
 

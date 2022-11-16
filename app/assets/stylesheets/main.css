@@ -98,5 +98,46 @@ footer {
   margin-top: 2rem;
 }
 
+.all-photographers {
+  color: white;
+}
+
+.target-photographer {
+  color: white
+}
+
+.index-page {
+  background-color: #c69864;
+}
+
+.show-page {
+  background-color: #c69864;
+  color: white
+}
+
+.show-title {
+  text-align: center;
+}
+
+.show-info {
+  text-align: center;
+}
+
+.sign-up-page {
+  background-color: #c69864;
+  margin-left: 30rem;
+  margin-right: 30rem;
+  border-radius: 20px;
+}
+
+.back-ground-image {
+  background-image: url();
+}
+
+.welcome {
+  text-align: center;
+}
+
+
 
 
