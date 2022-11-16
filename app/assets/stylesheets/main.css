@@ -1,5 +1,5 @@
 .top-bar {
-  background-color:  #8A5D29; 
+  background-color:  #754b1b; 
 }
 
 .top-bar a{
@@ -9,5 +9,94 @@
 }
 
 .top-bar ul {
-  background-color: #8A5D29;
+  background-color: transparent;
 }
+
+.top-bar .logo {
+  width: 10rem;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.home-page-layout {
+  background-color: #ECDCC6;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  columns: 4;
+  column-gap: 15px;
+  padding: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  position: inherit;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.image-tile-index:hover {
+  transform: scaleX(1.1) scaleY(1.1) scaleZ(1);
+  transition: transform .5s ease 0s;
+  max-width: 100%;
+  opacity: 0.6;
+}
+
+.button {
+  border-radius: 20px;
+  background-color: #c69864;
+}
+
+body {
+  background-color: #754b1b;
+}
+
+footer {
+  display: block;
+}
+
+.about-us {
+  color: white;
+  text-align: center;
+  margin-right: 1rem;
+}
+
+.contact {
+  color: white;
+  margin-left: 1rem;
+}
+
+.footer {
+  text-align: center;
+  color: white;
+}
+
+.pinterest img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.instagram img {
+  height: 3rem;
+  width: 3rem;
+}
+
+.linkedin img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.footer-info {
+  margin-top: 2rem;
+}
+
+
+
