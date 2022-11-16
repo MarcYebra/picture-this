@@ -14,14 +14,14 @@ const PhotographerIndex = (props) => {
         throw new Error(errorMessage)
       }
       const responseBody = await response.json()
-      setPhotographers(responseBody.photographers)
+      setPhotographers(responseBody)
     } catch (error) {
       console.error(`Error in Fetch: ${error.message}`)
     }
   }
 
   useEffect( () => { getPhotographers() }, [] )
-
+debugger
   const photographerTiles = photographers.map(photographer => {
     return (
       <PhotographerTile
