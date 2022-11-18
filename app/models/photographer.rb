@@ -6,5 +6,6 @@ class Photographer < ApplicationRecord
   validates :location, presence: true 
 
   has_many :reviews
+  
 
 end

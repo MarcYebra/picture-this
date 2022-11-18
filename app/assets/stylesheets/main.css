@@ -4,18 +4,20 @@
 
 .top-bar a{
   color: white;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
+  margin-top: 1rem;
+  font-weight: 600;
 }
 
 .top-bar ul {
   background-color: transparent;
+  margin-top: 1rem;
 }
 
 .top-bar .logo {
-  width: 10rem;
-  margin-left:auto;
-  margin-right:auto;
+  width: 12rem;
+  margin-left: .5rem;
+  margin-top: 1rem;
 }
 
 .home-page-layout {
@@ -44,7 +46,7 @@ img {
 }
 
 .image-tile-index:hover {
-  transform: scaleX(1.1) scaleY(1.1) scaleZ(1);
+  transform: scaleX(1.04) scaleY(1.04) scaleZ(1);
   transition: transform .5s ease 0s;
   max-width: 100%;
   opacity: 0.6;
@@ -125,17 +127,54 @@ footer {
 
 .sign-up-page {
   background-color: #c69864;
-  margin-left: 30rem;
-  margin-right: 30rem;
-  border-radius: 20px;
 }
 
-.back-ground-image {
-  background-image: url();
+.about-contact {
+  display: inline;
+  margin-right: 1rem;
 }
 
-.welcome {
+.button.hollow {
+  border: none;
+  color: white;
+  /* text-decoration: underline; */
+}
+
+.log-in {
+  background-color: #ad712d;
+}
+
+.welcome-sign-in {
   text-align: center;
+  color:#311d04;
+}
+
+.welcome-description {
+  text-align: center;
+  color: #311d04;
+}
+
+.sign-up-page {
+  border-radius: 30px;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.signup-login {
+  text-align: center;
+}
+
+.field {
+  margin-bottom: 1rem;
+}
+
+.or {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.photographer-show {
+  background-color:#ECDCC6
 }
 
 

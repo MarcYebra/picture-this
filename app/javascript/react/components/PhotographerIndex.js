@@ -21,7 +21,7 @@ const PhotographerIndex = (props) => {
   }
 
   useEffect( () => { getPhotographers() }, [] )
-debugger
+  
   const photographerTiles = photographers.map(photographer => {
     return (
       <PhotographerTile
@@ -31,6 +31,7 @@ debugger
         email = {photographer.email}
         description = {photographer.description}
         location = {photographer.location}
+        profile_photo = {photographer.profile_photo}
       />
     )
   })

@@ -4,6 +4,8 @@ class CreateReviews < ActiveRecord::Migration[5.2]
       t.string :title, null: false
       t.string :body, null: false 
       t.string :rating, null: false 
+      t.belongs_to :user, null: false 
+      t.belongs_to :photographer, null: false 
       
 
       t.timestamps null: false 
