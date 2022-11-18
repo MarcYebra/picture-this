@@ -1,3 +1,4 @@
+
 class Api::V1::ReviewsController < ApiController
   before_action :authenticate_user, only: [:create]
   skip_before_action :verify_authenticity_token
@@ -5,11 +6,10 @@ class Api::V1::ReviewsController < ApiController
 
   def create
     photographer = Photographer.find(params[:photographer_id])
-
+    
     review = Review.new(review_params)
     review.photographer = photographer
     review.user = current_user
-
     if review.save
       render json: review
     else
@@ -20,7 +20,7 @@ class Api::V1::ReviewsController < ApiController
   private
 
   def review_params
-    params.permit(:title, :body, :rating,)
+    params.permit(:title, :body, :rating)
   end
 
 end

@@ -9,7 +9,7 @@ const PhotographerShowContainer = (props) => {
   let reviewButton = "hide"
 
   const photographerId = props.match.params.id 
-
+  
   const fetchPhotographer = async () => {
     try {
       const response = await fetch(`/api/v1/photographers/${photographerId}`)
@@ -19,7 +19,6 @@ const PhotographerShowContainer = (props) => {
           throw error 
         }
         const responseBody = await response.json()
-        // debugger
         setPhotographer(responseBody)
         setReviews(responseBody.reviews)
         if (responseBody.current_user !== null) {
@@ -53,7 +52,7 @@ const PhotographerShowContainer = (props) => {
         throw newError;
       }
       const responseBody = await response.json()
-      setReviews([...reviews, responseBody.review])
+      setReviews([...reviews, responseBody])
     } catch (err) {
       console.error(`Error in Fetch: ${err.message}`)
     }
@@ -69,7 +68,6 @@ const PhotographerShowContainer = (props) => {
       email = {photographer.email}
       description = {photographer.description}
       location = {photographer.location}
-      // profile_photo = {photographer.profile_photo}
       reviews={reviews}
       setReviews={setReviews}
       addNewReview={addNewReview}

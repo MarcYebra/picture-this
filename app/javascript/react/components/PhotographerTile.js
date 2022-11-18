@@ -1,8 +1,10 @@
 import React from "react"
+import { Link } from 'react-router-dom'
 
 const PhotographerTile = (props) => {
   return (
     <div className="grid-x grid-margin-x">
+      <Link to={`/photographers/${props.id}`} >
       <div className='small-12 medium-8 large-8 callout'>
         <div className='grid-x'>
           <div className='small-8 medium-8 large-8'>
@@ -18,6 +20,7 @@ const PhotographerTile = (props) => {
           </div>
         </div>
       </div>
+      </Link>
     </div>
   )
 }

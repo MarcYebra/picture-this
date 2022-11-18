@@ -3,6 +3,7 @@ import PhotographerTile from './PhotographerTile'
 
 
 const PhotographerIndex = (props) => {
+  
   const [ photographers, setPhotographers ] = useState([])
 
   const getPhotographers = async () => {
@@ -26,6 +27,7 @@ const PhotographerIndex = (props) => {
     return (
       <PhotographerTile
         key = {photographer.id}
+        id = {photographer.id}
         first_name = {photographer.first_name}
         last_name = {photographer.last_name}
         email = {photographer.email}
@@ -37,6 +39,7 @@ const PhotographerIndex = (props) => {
   })
 
 return (
+  
   <div className='home-page-layout'>
     <h1>Photographers Index Page</h1>
     <div className='photographer-tiles'>

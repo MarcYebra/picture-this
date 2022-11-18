@@ -11,7 +11,6 @@ const ReviewForm = (props) => {
 
   const [errors, setErrors] = useState({})
   const [displayForm, setDisplayForm] = useState("hide")
-  const [files, setFiles] = useState({})
 
   const displayReviewForm = () => {
     if (displayForm === 'hide') {
@@ -53,8 +52,7 @@ const ReviewForm = (props) => {
           rating: "",
         }
         )
-        setDisplayForm("hide")
-        setFiles([])
+        setDisplayForm("hide")      
       }
     }
 

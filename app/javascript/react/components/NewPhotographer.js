@@ -2,22 +2,21 @@ import React, { useState } from 'react';
 import { Redirect } from 'react-router-dom'
 
 const NewPhotographer = (props) => {
-  const [redirect, setRedirect] = useState(null)
+  const [redirect, setRedirect] = useState(false)
   const [newPhotographer, setNewPhotographer] = useState({
     first_name: "",
     last_name: "",
     email: "",
     description: "",
     location: "",
-    profile_photo: ""
   })
 
-  const categories = ['','Family', 'Fashion', 'Influencer', 'Portrait', 'Wedding & Engagement', 'Pets' ]
+  const locations = ['','Allston', 'Beacon Hill', 'Back Bay', 'Bay Village', 'Beacon Hill', 'Brighton', 'Cambridge', 'Charlestown', 'Chinatown-Leather District', 'Dorchester', 'Downtown', 'East Boston', 'Fenway-Kenmore', 'Hyde Park', 'Jamaica Plain', 'Mattapan', 'Mid-Dorchester', 'Mission Hill', 'North End', 'Roslindale', 'Roxbury', 'South Boston', 'South End', 'West End', 'West Roxbury', 'Wharf District' ]
 
-  const categoriesOptions = categories.map(category => {
+  const locationOptions = locations.map(location => {
     return (
-      <option key={category} value={category}>
-        {category}
+      <option key={location} value={location}>
+        {location}
       </option>
     )
   })
@@ -39,7 +38,7 @@ const NewPhotographer = (props) => {
           "Content-Type": "application/json",
           "Accept": "application/json" 
         },
-        body: JSON.stringify({ ride: newPhotographer })
+        body: JSON.stringify({ photographer: newPhotographer })
       })
       if (!response.ok) {
         const errorMessage = `${response.status} (${response.statusText})`
@@ -52,8 +51,8 @@ const NewPhotographer = (props) => {
       if (photographerBody.photographer) {
         console.log("Added Successfully!")
         setRedirect(photographerBody.photographer.id)
-      } else if (photographerBody.error[0] === "Only admins can access this page") {
-        alert("Only admins can access this page")
+      } else if (photographerBody.error[0] === "You must be a photographer") {
+        alert("You must be a photographer")
       }  
       
     } catch(err) {
@@ -62,7 +61,7 @@ const NewPhotographer = (props) => {
     
   }
 
-  if (redirect !== null) {
+  if (redirect) {
     return <Redirect to={`/photographers/${redirect}`} />
   }
 
@@ -93,16 +92,11 @@ const NewPhotographer = (props) => {
         <label>
           Location:
           <select type="text" name="location" onChange={handleInputChange} value={newPhotographer.location}>
-            {categoriesOptions}
+            {locationOptions}
             </select> 
         </label>
 
-        <label>
-          Profile Picture:
-          <input type="text" name="profile_photo" onChange={handleInputChange} value={newPhotographer.profile_photo}/>
-        </label>
-
-        <input type="submit" value="Create" />
+        <input type="submit" value="Create Account" />
       </form>
     </div>    
   )
