@@ -1,5 +1,5 @@
 class ReviewSerializer < ActiveModel::Serializer
-  attributes :id, :title, :body, :rating :created_at
+  attributes :id, :title, :body, :rating, :created_at
 
   def created_at
     object.created_at.strftime("%b %d %Y")

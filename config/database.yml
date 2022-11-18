@@ -83,3 +83,7 @@ production:
   database: picture-this_production
   username: picture-this
   password: <%= ENV['PICTURE-THIS_DATABASE_PASSWORD'] %>
+
+  production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
