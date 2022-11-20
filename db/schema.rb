@@ -10,10 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_11_17_042925) do
+ActiveRecord::Schema.define(version: 2022_11_20_045200) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "images", force: :cascade do |t|
+    t.string "photo", null: false
+    t.bigint "photographer_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["photographer_id"], name: "index_images_on_photographer_id"
+  end
 
   create_table "photographers", force: :cascade do |t|
     t.string "first_name", null: false

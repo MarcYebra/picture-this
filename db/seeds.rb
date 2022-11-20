@@ -57,6 +57,62 @@ photographer_3 = Photographer.find_or_create_by(
   profile_photo: "app/assets/images/Alex.jpg"
 )
 
+photographer_4 = Photographer.find_or_create_by(
+  first_name: "Nick",
+  last_name: "Ryder",
+  email: "nick@gmail.com",
+  description: "I love taking photos of pets!",
+  location: "Allston",
+)
+
+photographer_5 = Photographer.find_or_create_by(
+  first_name: "Matthew",
+  last_name: "Ladd",
+  email: "matthew@gmail.com",
+  description: "I love taking sports photos!",
+  location: "Back Bay",
+)
+
+photographer_6 = Photographer.find_or_create_by(
+  first_name: "Molly",
+  last_name: "Greene",
+  email: "molly@gmail.com",
+  description: "I love taking engagement photos!",
+  location: "Back Bay",
+)
+
+photographer_7 = Photographer.find_or_create_by(
+  first_name: "Emily",
+  last_name: "Rose",
+  email: "emily@gmail.com",
+  description: "I love taking wedding photos!",
+  location: "Back Bay",
+)
+
+photographer_8= Photographer.find_or_create_by(
+  first_name: "Connor",
+  last_name: "Rookie",
+  email: "Connor@gmail.com",
+  description: "I love taking sports photos!",
+  location: "Back Bay",
+)
+
+photographer_9 = Photographer.find_or_create_by(
+  first_name: "Paul",
+  last_name: "Newman",
+  email: "matthew@gmail.com",
+  description: "I love taking headshots of actors",
+  location: "Back Bay",
+)
+
+photographer_10 = Photographer.find_or_create_by(
+  first_name: "James",
+  last_name: "Dean",
+  email: "james@gmail.com",
+  description: "I love taking sports photos!",
+  location: "Back Bay",
+)
+
 #### Reviews ######
 review_1 = Review.find_or_create_by(
   title: "Dream Photo Shoot",
