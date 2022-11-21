@@ -18,21 +18,43 @@ const PhotographerShow = (props) => {
   })
 
   return (
-    <div className="photographer-show">
-      <div>
-        <p>Name: {props.first_name} {props.last_name}</p>
-        <p>Location: {props.location}</p>
-        <p>Email: {props.email}</p>
-        <p>Bio: {props.description}</p>
-      </div>
+    <div className="section-show">
+      <div className="show-color-block">
+      <div className="container-show">
+        <div className="content-section-show">
+          <div className="title-show">
+            <div className="content-show">
+          <div className="show-box">
+          <h1 className="name-show">{props.first_name} {props.last_name}</h1>
 
-    <div className="button">
+            <div className="show-space">
+              <p className="for-inquiries">For inquiries:</p>
+              <div className="email-show">{props.email}</div>
+            </div>
+
+            <div className="show-space">
+              <p className="location-show">Location: </p>
+              <div className="location-show-props">{props.location} </div>
+            </div>
+
+            <div className="show-space">
+              <p className="bio-show">Bio:</p>
+              <div className="bio-show-props">{props.description}</div>
+            </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div className="remove-color">
       <ReviewForm 
         addNewReview = {props.addNewReview}
         reviewButton = {props.reviewButton}
       />
-    </div>
       <div>
+        </div>
         {reviewTiles}
       </div>
     </div>

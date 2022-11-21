@@ -5,13 +5,13 @@ const NewPhotographer = (props) => {
   const [redirect, setRedirect] = useState(false)
   const [newPhotographer, setNewPhotographer] = useState({
     first_name: "",
-    last_name: "",
+    last_name: "", 
     email: "",
     description: "",
     location: "",
   })
 
-  const locations = ['','Allston', 'Beacon Hill', 'Back Bay', 'Bay Village', 'Beacon Hill', 'Brighton', 'Cambridge', 'Charlestown', 'Chinatown-Leather District', 'Dorchester', 'Downtown', 'East Boston', 'Fenway-Kenmore', 'Hyde Park', 'Jamaica Plain', 'Mattapan', 'Mid-Dorchester', 'Mission Hill', 'North End', 'Roslindale', 'Roxbury', 'South Boston', 'South End', 'West End', 'West Roxbury', 'Wharf District' ]
+  const locations = ['', 'Allston', 'Beacon Hill', 'Back Bay', 'Bay Village', 'Beacon Hill', 'Brighton', 'Cambridge', 'Charlestown', 'Chinatown-Leather District', 'Dorchester', 'Downtown', 'East Boston', 'Fenway-Kenmore', 'Hyde Park', 'Jamaica Plain', 'Mattapan', 'Mid-Dorchester', 'Mission Hill', 'North End', 'Roslindale', 'Roxbury', 'South Boston', 'South End', 'West End', 'West Roxbury', 'Wharf District' ]
 
   const locationOptions = locations.map(location => {
     return (

@@ -10,13 +10,11 @@
   
   <nav class="top-bar">
     <a href="/" class="logo"><%= image_tag("logo.png", alt: "Logo")%></a>
-
-    <section class="top-bar-section">
+      <section class="top-bar-section">
 
       <ul class="right">
       <div class="about-contact">
         <a href="about.html" class="button hollow">About</a>
-        <a href="#features" class="button hollow">Contact</a>
         </div>
         <%- if current_user -%>
           <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
@@ -49,8 +47,7 @@
     <div class="footer">
       <div class="footer-info">
         <p>
-          <a class="about-us" href="/photographers">About</a>   |   
-          <a class="contact" href="/photographers">Contact</a>
+          <a class="about-us" href="/photographers">About</a>  
       </div>
         <p> 
       <div class="icons">

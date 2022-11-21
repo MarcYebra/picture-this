@@ -13,6 +13,10 @@
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
+<div class="field">
+      <%= f.label :username %><br />
+      <%= f.text_field :username, autofocus: true, autocomplete: "username" %>
+  </div>
 
   <div class="field">
     <%= f.label :password %>
@@ -27,11 +31,18 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
+    <div class="field">
+      <%= f.label :profile_photo, 'Profile Photo (optional)'%><br />
+      <%= f.file_field :profile_photo %>
+    </div>  
+
 
 <div class="signup-login">
+
   <div class="actions">
     <%= f.submit "Sign up" %>
-  </div>
+    </div>
+
 <% end %>
 
 <p class="or">OR</p>

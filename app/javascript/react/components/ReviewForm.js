@@ -57,25 +57,33 @@ const ReviewForm = (props) => {
     }
 
   return (
-    <div>
-      <button type="button" onClick={displayReviewForm}>Review</button>
+    <div className='backdrop-review'>
+    <div className='review-form-backdrop'>
+      <button className='button' type="button" onClick={displayReviewForm}>Review</button>
+      <div className='review-form-show'>
       <form onSubmit={handleSubmitAddNewReview} className={`new-review ${displayForm}`}>
       <ErrorLists errors={errors} />
 
         <label htmlFor="title">Title:
-          <input id="title" type="text" name="title" value={newReview.title} onChange={handleFormChange}/>
+          <input className='form-box' id="title" type="text" name="title" value={newReview.title} onChange={handleFormChange}/>
         </label>
-
+        
         <label htmlFor="body">Description:
-          <textarea id="body" rows="4" type="text" name="body" value={newReview.body} onChange={handleFormChange}/>
-        </label>
-
-        <label htmlFor="rating">Rating:
-          <input id="rating" type="number" name="rating" value={newReview.rating} onChange={handleFormChange}/>
+          <textarea className='form-box'  id="body" rows="4" type="text" name="body" value={newReview.body} onChange={handleFormChange}/>
         </label>
       
-        <button>Submit Review</button>
+        <label htmlFor="rating">Rating:
+          <input className='form-box' id="rating" type="number" name="rating" value={newReview.rating} onChange={handleFormChange}/>
+        </label>
+
+      <div className='center-submit-button'>
+        <div className='move-button-down'>
+        <button className='button'>Submit Review</button>
+        </div>
+        </div>
       </form>
+      </div>
+    </div>
     </div>
   )
 }
