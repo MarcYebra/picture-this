@@ -4,12 +4,14 @@ import React from 'react'
 const ReviewTile = (props) => {
   
   return (
-    <div>
-    <p>{props.username}</p>
-    <p>{props.created_at}</p>
-    <p>{props.rating}</p>
-    <p>Title: {props.title}</p>
-    <p>Review: {props.body}</p>
+    <div className='tile-page'>
+      <div className='review-display-tile'>
+        <p className='username-tile'>{props.username} | Rating:  {props.rating} / 5 </p>
+        <p className='title-tile'>{props.title}</p>
+        <p className='line-tile'></p>
+        <p className='review-tile'>"{props.body}"</p>
+        <p className='timestamp-tile'>{props.created_at} </p>
+      </div>
     </div>
   )
 }
