@@ -17,6 +17,21 @@ class Api::V1::ReviewsController < ApiController
     end
   end
 
+  def destroy
+    review  = Review.find(params[“id”])
+    if(verify_access(review))
+      review.destroy
+      render json: Review.all
+    else
+      render status: 401
+    end
+  end
+
+  def edit 
+    review = Review.find(params[:id])
+    render :edit 
+  end
+
   private
 
   def review_params

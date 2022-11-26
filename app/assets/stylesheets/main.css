@@ -264,10 +264,35 @@ footer {
 .photographer-index-background-color {
   background-color: #ECDCC6;
 }
+
 .photographer-tile-box {
-  border: 4px solid rgb(255, 255, 255);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  text-align: center;
+  background-color: rgb(240, 236, 226);
+}
+
+.info-photo-tile {
   margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.padding-tile {
+  padding-top: 15rem;
+  padding-left: 25rem;
+}
+
+.firstname-lastname {
+  text-align: center;
+}
+
+.padding-tile-bottom {
+  padding-bottom: 15rem;
+}
+
+.padding-index {
+  padding-top: 3rem;
+  padding-left: 1.5rem;
 }
 
 /* Photographer Show Page  */
@@ -277,12 +302,19 @@ footer {
   box-sizing: border-box;
 }
 
+.profileimagegoeshere {
+  font-style: italic;
+}
+
+.firstname-lastname {
+  font-weight:bolder
+}
+
 .section-show {
   width: 100%;
   min-height: 100vh;
   background-color:#ECDCC6;
 }
-
 
 .container-show {
   width: 80%;
@@ -438,35 +470,57 @@ button, .button{
 .review-tile {
   color: rgb(13, 13, 13);
   font-style: italic;
-  text-align: center;
+  text-align: left;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .title-tile {
   color:rgb(67, 67, 67);
   font-size: 24px;
-  text-align: center;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.review-show-page {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .username-tile {
   text-align: left;
   color: rgb(108, 108, 108);
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .timestamp-tile {
-  text-align: right;
+  text-align: left;
   color: rgb(108, 108, 108);
   margin-right:3rem;
-}
-
-.line-tile {
-  border: 0.5px solid rgb(157, 153, 153);
-  border-radius: 10rem;
-  margin-left: 40%;
-  margin-right:40% ;
+  padding-left: 1rem;
 }
 
 /* SIGN UP   */
+
+
+/* LOG IN  */
+.login-signup-page {
+  background-color: #ECDCC6;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  border-radius: 2rem;
+}
+
+.login-title-log-in {
+  text-align: center;
+  color: #3d3d3d;
+}
+
+.login-background-image {
+  background-color:#ECDCC6;
+}
+
+
 
 
 
