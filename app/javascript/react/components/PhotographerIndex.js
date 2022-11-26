@@ -40,10 +40,11 @@ const PhotographerIndex = (props) => {
 
 return (
   <div className='photographer-index-background-color'>
-    <h5>Photographers</h5>
+    <div className='padding-index'>
       <div className='photographer-index-box' >
-    <div className='grid-x grid-padding-x photographer-index'>
-    {photographerTiles}
+        <div className='grid-x grid-padding-x photographer-index'>
+        {photographerTiles}
+        </div>
       </div>
     </div>
   </div>

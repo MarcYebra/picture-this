@@ -6,12 +6,14 @@ const PhotographerTile = (props) => {
     <div>
       <div className="photographer-tile-box" >
           <Link to={`/photographers/${props.id}`} >  
-            <p>Name: {props.first_name} {props.last_name}</p>
-            <p>{props.email}</p>
-            <p>Bio: {props.description}</p>
-            <p>Location: {props.location}</p>
+          <div className="padding-tile"></div>
+          <div className="info-photo-tile">
+            <p className="firstname-lastname">{props.first_name} {props.last_name}</p>
+            <p className="profileimagegoeshere">(profile image goes here)</p>
+          </div>
+          <div className="padding-tile-bottom"></div>
         </Link>
-        </div>
+      </div>
     </div>
   )
 }
