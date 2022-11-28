@@ -8,7 +8,7 @@ const PhotographerShowContainer = (props) => {
 
   let reviewButton = "hide"
 
-  const photographerId = props.match.params.id 
+  const photographerId = props.match.params.id
   
   const fetchPhotographer = async () => {
     try {
@@ -57,7 +57,7 @@ const PhotographerShowContainer = (props) => {
       console.error(`Error in Fetch: ${err.message}`)
     }
   }
-
+  
   return (
     <div>
     <PhotographerShow
@@ -68,10 +68,12 @@ const PhotographerShowContainer = (props) => {
       email = {photographer.email}
       description = {photographer.description}
       location = {photographer.location}
+      profile_photo = {photographer.profile_photo}
       reviews={reviews}
       setReviews={setReviews}
       addNewReview={addNewReview}
       reviewButton = {reviewButton}
+      params = {props.match.params}
     />
     </div>
   )
