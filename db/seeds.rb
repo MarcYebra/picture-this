@@ -44,7 +44,7 @@ photographer_2 = Photographer.find_or_create_by(
   email: "Paxton@gmail.com",
   description: "Howdy y'all! I specialize in taking family portraits. My background in photography is vast and have worked in many other mediums. When it comes to my gear I shoot with a Canon 5D Mark IV with my 35mm lens. If I'm not taking photos I'm usually hiking, editing, or spending time at home with my dog! If you have any questions please send me an email. Look forward to working with you. ",
   location: "Downtown Boston",
-  profile_photo: "app/assets/images/Paxton.jpg"
+  profile_photo: "https://picture-this-production.s3.amazonaws.com/Paxton/Paxton.jpg",
 )
 
 photographer_3 = Photographer.find_or_create_by(

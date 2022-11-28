@@ -26,11 +26,13 @@
     </section>
   </nav>
 
+<div class='flash-message' >
   <%- flash.each do |key, value| -%>
     <div class="flash flash-<%= key %>">
       <%= value %>
     </div>
   <%- end -%>
+  </div>
 
   <%= yield %>
 
@@ -47,7 +49,7 @@
     <div class="footer">
       <div class="footer-info">
         <p>
-          <a class="about-us" href="/photographers">About</a>  
+          <a class="about-us" href="/aboutme">About</a>  
       </div>
         <p> 
       <div class="icons">

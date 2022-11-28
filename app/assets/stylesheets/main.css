@@ -457,6 +457,10 @@ button, .button{
   margin-top: 1rem;
 }
 
+.profile-photo {
+  width: 100%;
+} 
+
 /* REVIEW DISPLAY  */
 .review-display-tile {
   text-align: center;
@@ -518,6 +522,11 @@ button, .button{
 
 .login-background-image {
   background-color:#ECDCC6;
+}
+
+.flash-message {
+  text-align: center;
+  color: white;
 }
 
 

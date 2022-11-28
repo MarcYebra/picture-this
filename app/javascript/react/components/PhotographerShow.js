@@ -4,6 +4,7 @@ import ReviewForm from "./ReviewForm"
 
 const PhotographerShow = (props) => {
   const reviewTiles = props.reviews.map((review) => {
+
     return (
       <ReviewTile
         key={review.id}
@@ -13,10 +14,13 @@ const PhotographerShow = (props) => {
         rating={review.rating}
         created_at={review.created_at}
         username={review.user.username}
+        params = {props.params}
+        setReviews={props.setReviews}
       />
     )
   })
 
+  
   return (
     <div className="section-show">
       <div className="show-color-block">
@@ -25,6 +29,7 @@ const PhotographerShow = (props) => {
             <div className="title-show">
               <div className="content-show">
                 <div className="show-box">
+                  <div className="profile-photo"><img src={props.profile_photo} /></div>
                   <h1 className="name-show">{props.first_name} {props.last_name}</h1>
                     <div className="show-space">
                       <p className="for-inquiries">For inquiries</p>
