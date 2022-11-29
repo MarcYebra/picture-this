@@ -28,8 +28,10 @@ const PhotographerShow = (props) => {
           <div className="content-section-show">
             <div className="title-show">
               <div className="content-show">
+                <div className="grid-x grid-padding">
                 <div className="show-box">
                   <div className="profile-photo"><img src={props.profile_photo} /></div>
+                    <div className="right-show" >
                   <h1 className="name-show">{props.first_name} {props.last_name}</h1>
                     <div className="show-space">
                       <p className="for-inquiries">For inquiries</p>
@@ -42,6 +44,8 @@ const PhotographerShow = (props) => {
                         <div className="show-space">
                           <p className="bio-show">Bio</p>
                         <div className="bio-show-props">{props.description}</div>
+                        </div>
+                        </div>
                         </div>
                 </div>
               </div>

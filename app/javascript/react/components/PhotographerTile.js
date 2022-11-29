@@ -3,13 +3,16 @@ import { Link } from 'react-router-dom'
 
 const PhotographerTile = (props) => {
   return (
-    <div>
+    <div className="tile-page">
       <div className="photographer-tile-box" >
           <Link to={`/photographers/${props.id}`} >  
           <div className="padding-tile"></div>
           <div className="info-photo-tile">
-            <p className="firstname-lastname">{props.first_name} {props.last_name}</p>
-            <p className="profileimagegoeshere">(profile image goes here)</p>
+            <p className="firstname-lastname">{props.first_name}</p>
+  
+            <img src={props.profile_photo} className="profile-photo-index" />
+            
+            <p className="firstname-lastname">{props.last_name}</p>
           </div>
           <div className="padding-tile-bottom"></div>
         </Link>
