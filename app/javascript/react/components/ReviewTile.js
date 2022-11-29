@@ -41,9 +41,12 @@ if (props.currentUser) {
   return (
     <div className='tile-page'>
       <div className='review-display-tile'>
-      <button onClick={handleDeleteReview}>
+        <div className='delete-button'>
+      <button  className= 'button delete' onClick={handleDeleteReview}>
         Delete 
       </button>
+      </div>
+
         <p className='username-tile'>{props.username} | Rating:  {props.rating} / 5</p>
         <p className='title-tile'>{props.title}</p>
         <div className='review-show-space' >

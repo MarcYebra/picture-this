@@ -203,7 +203,7 @@ footer {
   padding: 2rem;
   padding-bottom: 5rem;
   background-size: 200%;
-  background-image: url('Photo-layout.jpg');
+  background-image: url(https://picture-this-production.s3.amazonaws.com/Backdrops/Photo-layout.jpg);
   background-repeat: no-repeat;
 }
 
@@ -235,7 +235,7 @@ footer {
   padding: 2rem;
   background-size: 250%;
   padding-bottom: 2rem;
-  background-image: url(Signup.jpg);
+  background-image: url(https://picture-this-production.s3.amazonaws.com/Backdrops/Signup.jpg);
 }
 
 .center-new-photographer-button {
@@ -262,37 +262,46 @@ footer {
 
 /* Photographer Index Page  */
 .photographer-index-background-color {
-  background-color: #ECDCC6;
+  background-color: #E2dbd1;
 }
 
 .photographer-tile-box {
   margin-bottom: 0.5rem;
-  margin-left: 0.5rem;
+  margin: 0.2rem;
   text-align: center;
-  background-color: rgb(240, 236, 226);
+  background-color: #fef7ef;
 }
 
-.info-photo-tile {
-  margin-left: 1rem;
-  margin-right: 1rem;
+.photographer-tile-box:hover {
+  transform: scaleX(1.01) scaleY(1.01) scaleZ(1);
+  transition: transform .5s ease 0s;
+  max-width: 100%;
+  opacity: 0.6;
 }
 
 .padding-tile {
-  padding-top: 15rem;
+  padding-top: 4rem;
   padding-left: 25rem;
 }
 
 .firstname-lastname {
   text-align: center;
+  font-size: 35px;
 }
 
 .padding-tile-bottom {
-  padding-bottom: 15rem;
+  padding-bottom: 4rem;
 }
 
 .padding-index {
   padding-top: 3rem;
   padding-left: 1.5rem;
+}
+
+.profile-photo-index {
+  width: 100%;
+  border-radius: 0;
+  width: 375px;
 }
 
 /* Photographer Show Page  */
@@ -429,8 +438,13 @@ footer {
   background-color: rgb(248, 240, 227);
 }
 
+.right-show {
+  margin-left: 30rem;
+}
+
 .show-box {
   text-align: right;
+  margin-left: 5rem;
 }
 
 .email-show,
@@ -447,7 +461,6 @@ footer {
 }
 
 .review-form-backdrop {
-
   text-align: center;
   margin-left: 15%;
   margin-right: 15%;
@@ -456,10 +469,6 @@ footer {
 button, .button{
   margin-top: 1rem;
 }
-
-.profile-photo {
-  width: 100%;
-} 
 
 /* REVIEW DISPLAY  */
 .review-display-tile {
@@ -504,6 +513,15 @@ button, .button{
   padding-left: 1rem;
 }
 
+.delete-button {
+ text-align: right;
+ margin-right: 1rem;
+}
+
+.delete {
+  background-color: #3d3d3d;
+}
+
 /* SIGN UP   */
 
 
@@ -527,6 +545,10 @@ button, .button{
 .flash-message {
   text-align: center;
   color: white;
+}
+
+.profile-photo {
+  width: 400px;
 }
 
 

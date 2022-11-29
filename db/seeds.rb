@@ -35,7 +35,7 @@ photographer_1 = Photographer.find_or_create_by(
   email: "marc@gmail.com",
   description: "I love taking fashion photos!",
   location: "Cambridge",
-  profile_photo: "app/assets/images/Marc.jpg"
+  profile_photo: "https://picture-this-production.s3.amazonaws.com/Marc/Marc.jpg"
 )
 
 photographer_2 = Photographer.find_or_create_by(
@@ -44,7 +44,7 @@ photographer_2 = Photographer.find_or_create_by(
   email: "Paxton@gmail.com",
   description: "Howdy y'all! I specialize in taking family portraits. My background in photography is vast and have worked in many other mediums. When it comes to my gear I shoot with a Canon 5D Mark IV with my 35mm lens. If I'm not taking photos I'm usually hiking, editing, or spending time at home with my dog! If you have any questions please send me an email. Look forward to working with you. ",
   location: "Downtown Boston",
-  profile_photo: "https://picture-this-production.s3.amazonaws.com/Paxton/Paxton.jpg",
+  profile_photo: "https://picture-this-production.s3.amazonaws.com/Paxton/PaxtonProfilePhoto.jpg",
 )
 
 photographer_3 = Photographer.find_or_create_by(
@@ -53,7 +53,7 @@ photographer_3 = Photographer.find_or_create_by(
   email: "alex@gmail.com",
   description: "I love taking portraits!",
   location: "Beacon Hill",
-  profile_photo: "app/assets/images/Alex.jpg"
+  profile_photo: "https://picture-this-production.s3.amazonaws.com/Alex/Alex.jpg"
 )
 
 photographer_4 = Photographer.find_or_create_by(
@@ -62,14 +62,16 @@ photographer_4 = Photographer.find_or_create_by(
   email: "nick@gmail.com",
   description: "I love taking photos of pets!",
   location: "Allston",
+  profile_photo: "https://picture-this-production.s3.amazonaws.com/Nick/Nick.jpg"
 )
 
 photographer_5 = Photographer.find_or_create_by(
-  first_name: "Matthew",
+  first_name: "Michael",
   last_name: "Ladd",
   email: "matthew@gmail.com",
   description: "I love taking sports photos!",
   location: "Back Bay",
+  profile_photo: "https://picture-this-production.s3.amazonaws.com/Michael/Michael.jpg"
 )
 
 photographer_6 = Photographer.find_or_create_by(
@@ -78,6 +80,7 @@ photographer_6 = Photographer.find_or_create_by(
   email: "molly@gmail.com",
   description: "I love taking engagement photos!",
   location: "Back Bay",
+  profile_photo: "https://picture-this-production.s3.amazonaws.com/Molly/Molly.jpg"
 )
 
 photographer_7 = Photographer.find_or_create_by(
@@ -86,6 +89,7 @@ photographer_7 = Photographer.find_or_create_by(
   email: "emily@gmail.com",
   description: "I love taking wedding photos!",
   location: "Back Bay",
+  profile_photo: "https://picture-this-production.s3.amazonaws.com/Emily/Emily.jpg"
 )
 
 photographer_8= Photographer.find_or_create_by(
@@ -94,6 +98,7 @@ photographer_8= Photographer.find_or_create_by(
   email: "Connor@gmail.com",
   description: "I love taking sports photos!",
   location: "Back Bay",
+  profile_photo: "https://picture-this-production.s3.amazonaws.com/Connor/Connor.jpg"
 )
 
 photographer_9 = Photographer.find_or_create_by(
@@ -102,6 +107,7 @@ photographer_9 = Photographer.find_or_create_by(
   email: "matthew@gmail.com",
   description: "I love taking headshots of actors",
   location: "Back Bay",
+  profile_photo: "https://picture-this-production.s3.amazonaws.com/Paul/Paul.jpg"
 )
 
 photographer_10 = Photographer.find_or_create_by(
@@ -110,6 +116,7 @@ photographer_10 = Photographer.find_or_create_by(
   email: "james@gmail.com",
   description: "I love taking sports photos!",
   location: "Back Bay",
+  profile_photo: "https://picture-this-production.s3.amazonaws.com/James/James.jpg"
 )
 
 #### Reviews ######
