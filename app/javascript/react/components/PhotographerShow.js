@@ -53,6 +53,7 @@ const PhotographerShow = (props) => {
           </div>
         </div>
       </div>
+        <img src={props.portfolio} />
       <div className="remove-color">
         <ReviewForm addNewReview = {props.addNewReview} reviewButton = {props.reviewButton} />
         {reviewTiles}
