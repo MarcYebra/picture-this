@@ -1,12 +1,14 @@
-<h1>Picture This</h1>
+<h1 align="center">Picture This</h1>
 
+<p align="center">
+  <img src="https://picture-this-production.s3.amazonaws.com/Icons/logo+copy.png" alt="Picture This logo" width="100px" height="100px"/>
 
-<i>Picture This, is an application that helps users find photographers in the Boston area. Users are able to write reviews and delete them if they'd like.</i>
+<i>Picture This is an application that allows users to find professional photographers within the Boston area. You can view individual photographers profiles and see reviews left by others. </i>
 <br>
 
 </p>
 
-<p>
+<p align="center">
   <a href="https://picture-this.onrender.com"><strong>picture-this.onrender.com</strong></a>
   <br>
 </p>
@@ -16,14 +18,14 @@
 - Backend: Ruby 2.7.3, Rails 5.2.5
 - Frontend: React
 - Database: PostgreSQL
-- AWS
+- AWS 
 
 ## ▶️ Development
 Prerequisite: have Yarn installed, and Ruby version 2.7.3.
 
 1. Clone the repository
     ```sh
-    git clone https://github.com/MarcYebra
+    git clone https://github.com/MarcYebra/picture-this
     ```
     
 2. Install Ruby gems
@@ -58,3 +60,16 @@ Any contributions you make are **greatly appreciated**.
 3. Commit your Changes (`git commit -m 'contribute to new feature'`)
 4. Push to the Branch (`git push origin head`)
 5. Open a Pull Request
+
+## 👨‍💻 Author
+
+Connect with the developer.
+
+- [LinkedIn][linkedin]
+- [Email][email]
+- [GitHub][github]
+
+**Love Picture This? Give this repo a star :star: :arrow_up:.**
+
+[linkedin]: https://www.linkedin.com/in/marcyebra/
+[github]: https://github.com/MarcYebra

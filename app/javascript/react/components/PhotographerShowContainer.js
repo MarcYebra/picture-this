@@ -69,6 +69,7 @@ const PhotographerShowContainer = (props) => {
       description = {photographer.description}
       location = {photographer.location}
       profile_photo = {photographer.profile_photo}
+      portfolio = {photographer.portfolio}
       reviews={reviews}
       setReviews={setReviews}
       addNewReview={addNewReview}
