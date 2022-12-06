@@ -1,7 +1,7 @@
 <h1 align="center">Picture This</h1>
 
 <p align="center">
-  <img src="https://picture-this-production.s3.amazonaws.com/Icons/logo+copy.png" alt="Picture This logo" width="100px" height="100px"/>
+  <img src="https://picture-this-production.s3.amazonaws.com/Icons/logo+copy.png" alt="Picture This logo" width="12rem"/>
 
 <i>Picture This is an application that allows users to find professional photographers within the Boston area. You can view individual photographers profiles and see reviews left by others. </i>
 <br>
@@ -66,7 +66,6 @@ Any contributions you make are **greatly appreciated**.
 Connect with the developer.
 
 - [LinkedIn][linkedin]
-- [Email][email]
 - [GitHub][github]
 
 **Love Picture This? Give this repo a star :star: :arrow_up:.**
