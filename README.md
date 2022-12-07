@@ -1,4 +1,3 @@
-<h1 align="center">Picture This</h1>
 
 <p align="center">
   <img src="https://picture-this-production.s3.amazonaws.com/Icons/logo+copy.png" alt="Picture This logo" width="300rem" />
