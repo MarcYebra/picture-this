@@ -23,7 +23,7 @@ end
 private 
 
 def photographer_params
-  params.require(:photographer).permit(:first_name, :last_name, :email, :description, :location)
+  params.require(:photographer).permit(:first_name, :last_name, :email, :description, :location, :category)
 end
 
 end
