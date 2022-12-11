@@ -1,9 +1,9 @@
-<div class="back-ground-image">
-<div class="sign-up-page">
-<div class="welcome">
-<h2>Welcome</h2>
-<p>Join to browse through a selection of our photographers</p>
-</div>
+<div class='back-ground-image-signup'>
+<div class='flex-container align-center' >
+  <div class='border-new-photographer'>
+    <div class='new-photographer-component'>
+    <h2 class='photographer-form'>Welcome to Picture This</h2>
+      <p class='join-roster'>Find photographers in your area</p>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
@@ -11,6 +11,11 @@
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+<div class="field">
+      <%= f.label :username %><br />
+      <%= f.text_field :username, autofocus: true, autocomplete: "username" %>
   </div>
 
   <div class="field">
@@ -26,13 +31,29 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
-<div class="welcome">
+    <div class="field">
+      <%= f.label :profile_photo, 'Profile Photo (optional)'%><br />
+      <%= f.file_field :profile_photo %>
+    </div>  
+
+
+<div class="signup-login">
+
   <div class="actions">
     <%= f.submit "Sign up" %>
-  </div>
+    </div>
+
 <% end %>
+
+<p class="or">OR</p>
 
 <%= render "devise/shared/links" %>
 </div>
 </div>
 </div>
+</div>
+</div>
+
+
+
+
