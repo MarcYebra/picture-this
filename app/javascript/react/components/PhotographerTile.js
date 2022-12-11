@@ -13,6 +13,7 @@ const PhotographerTile = (props) => {
             <img src={props.profile_photo} className="profile-photo-index" />
             
             <p className="firstname-lastname">{props.last_name}</p>
+            <p>{props.category} </p>
           </div>
           <div className="padding-tile-bottom"></div>
         </Link>

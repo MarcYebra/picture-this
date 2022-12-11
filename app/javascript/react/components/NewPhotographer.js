@@ -12,11 +12,20 @@ const NewPhotographer = (props) => {
   })
 
   const locations = ['', 'Allston', 'Beacon Hill', 'Back Bay', 'Bay Village', 'Beacon Hill', 'Brighton', 'Cambridge', 'Charlestown', 'Chinatown-Leather District', 'Dorchester', 'Downtown', 'East Boston', 'Fenway-Kenmore', 'Hyde Park', 'Jamaica Plain', 'Mattapan', 'Mid-Dorchester', 'Mission Hill', 'North End', 'Roslindale', 'Roxbury', 'South Boston', 'South End', 'West End', 'West Roxbury', 'Wharf District' ]
+  const categories = ['', 'Fashion', 'Portraits', 'Graduation', 'Family', 'Pets', 'Sports', 'Engagement', 'Food', 'Events', 'Weddings', 'Fitness', 'Influencer/Celebrity']
 
   const locationOptions = locations.map(location => {
     return (
       <option key={location} value={location}>
         {location}
+      </option>
+    )
+  })
+
+  const categoryOptions = categories.map(category => {
+    return (
+      <option key={category} value={category}>
+        {category}
       </option>
     )
   })
@@ -75,27 +84,34 @@ const NewPhotographer = (props) => {
 
         <form onSubmit={handleSubmitNewPhotographer}>
           <label>
-            First Name:
+            First Name
             <input className='form-box' type="text" name="first_name" onChange={handleInputChange} value={newPhotographer.first_name}/>
           </label>
 
           <label>
-            Last Name:
+            Last Name
             <input className='form-box' type="text" name="last_name" onChange={handleInputChange} value={newPhotographer.last_name}/>
           </label>
 
           <label>
-            Email:
+            Email
             <input className='form-box' type="text" name="email" onChange={handleInputChange} value={newPhotographer.email}/>
           </label>
 
           <label>
-            Bio:
+            Bio
             <input className='form-box' type="text" name="description" onChange={handleInputChange} value={newPhotographer.description}/>
           </label>
 
           <label>
-            Location:
+            Category
+            <select className='form-box' type="text" name="category" onChange={handleInputChange} value={newPhotographer.category}>
+              {categoryOptions}
+            </select>
+          </label>
+
+          <label>
+            Location 
             <select className='form-box' type="text" name="location" onChange={handleInputChange} value={newPhotographer.location}>
               {locationOptions}
               </select> 

@@ -32,6 +32,7 @@ const PhotographerIndex = (props) => {
         last_name = {photographer.last_name}
         email = {photographer.email}
         description = {photographer.description}
+        category = {photographer.category}
         location = {photographer.location}
         profile_photo = {photographer.profile_photo}
       />
