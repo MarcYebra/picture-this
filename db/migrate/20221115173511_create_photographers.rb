@@ -7,6 +7,7 @@ class CreatePhotographers < ActiveRecord::Migration[5.2]
       t.string :description, null: false
       t.string :location, null: false 
       t.string :profile_photo
+      t.string :category, null: false 
 
       t.timestamps null: false 
     end
