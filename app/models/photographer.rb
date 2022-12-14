@@ -4,7 +4,6 @@ class Photographer < ApplicationRecord
   validates :email, presence: true
   validates :description, presence: true 
   validates :location, presence: true 
-  validates :category, presence: true 
 
   has_many :reviews
   has_many :images 
