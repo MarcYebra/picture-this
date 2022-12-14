@@ -34,6 +34,7 @@ const PhotographerShow = (props) => {
                     <div className="right-show" >
                   <h1 className="name-show">{props.first_name} {props.last_name}</h1>
                     <div className="show-space">
+                      <p>{props.category}</p>
                       <p className="for-inquiries">For inquiries</p>
                         <div className="email-show">{props.email}</div>
                     </div>
