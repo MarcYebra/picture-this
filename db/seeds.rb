@@ -4,8 +4,6 @@ Review.delete_all
 
 #### User ####
 user_1 = User.create(
-  first_name: "Marc",
-  last_name: "Klaus",
   email: "marc@gmail.com",
   password: "password",
   username: "marc_klaus",
@@ -13,8 +11,6 @@ user_1 = User.create(
 )
 
 user_2 = User.create(
-  first_name: "Ashley",
-  last_name: "Lawler",
   email: "ashley@gmail.com",
   password: "password",
   username: "aashley12",
@@ -22,8 +18,6 @@ user_2 = User.create(
 )
 
 user_3 = User.create(
-  first_name: "Richard",
-  last_name: "White",
   email: "richard@gmail.com",
   password: "password",
   username: "richard.white12",
