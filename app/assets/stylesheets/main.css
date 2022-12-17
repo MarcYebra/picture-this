@@ -1,64 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Caveat:wght@600&family=Cookie&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Caveat:wght@600&family=Cookie&family=Imbue:opsz@10..100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Caveat:wght@600&family=Cookie&family=Imbue:opsz@10..100&family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
+
 .top-bar {
-  background-color:  #754b1b; 
+  background-color:  #3b0f04; 
+  margin-bottom: 1rem;
 }
 
-.top-bar a{
-  color: white;
-  text-align: center;
-  margin-top: 1rem;
-  font-weight: 600;
+body {
+  background-color: #3b0f04;
 }
 
 .top-bar ul {
   background-color: transparent;
   margin-top: 1rem;
+
 }
 
-.top-bar .logo {
-  width: 12rem;
-  margin-left: .5rem;
+.logo {
+  width: 200px;
+  height: auto;
+  margin-left: 43vw;
   margin-top: 1rem;
+}
+
+.login-signup-button {
+  color: rgb(255, 255, 255);
+  margin-right: 1vw;
+
 }
 
 .home-page-layout {
   background-color: #ECDCC6;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  columns: 4;
-  column-gap: 15px;
-  padding: 30px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-img {
-  width: 100%;
-  margin-bottom: 15px;
-  border-radius: 10px;
-}
-
-.image-tile-index:hover {
+/* .image-tile-index:hover {
   transform: scaleX(1.04) scaleY(1.04) scaleZ(1);
   transition: transform .5s ease 0s;
   max-width: 100%;
   opacity: 0.6;
-}
-
-.button {
-  border-radius: 20px;
-  background-color: #c69864;
-}
-
-body {
-  background-color: #754b1b;
-}
+} */
 
 footer {
   display: block;
@@ -67,11 +49,6 @@ footer {
 .about-us {
   color: white;
   text-align: center;
-}
-
-.contact {
-  color: white;
-  margin-left: 1rem;
 }
 
 .footer {
@@ -106,10 +83,6 @@ footer {
   color: white
 }
 
-.index-page {
-  background-color: #c69864;
-}
-
 .show-page {
   background-color: #c69864;
   color: white
@@ -135,10 +108,6 @@ footer {
 .button.hollow {
   border: none;
   color: white;
-}
-
-.log-in {
-  background-color: #ad712d;
 }
 
 .welcome-sign-in {
@@ -169,7 +138,6 @@ footer {
   margin-top: 1rem;
   font-weight: 600;
 }
-
 
 .small-12 {
   margin-left: 2rem;
@@ -551,9 +519,130 @@ button, .button{
   width: 400px;
 }
 
+/* HOME PAGE  */
 
+.section01-image {
+  width: 100%;
+}
 
+.section02-image {
+  width: 100%;
+}
 
+.section02-image:hover {
+  background-color: grey;
+}
 
+.section01-heading-container {
+  position:absolute;
+  width: 30%;
+  top:17%;
+  text-align: center;
+  margin-inline: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
 
+}
 
+.section01-heading {
+  color: white;
+  font-family: 'Bebas Neue';
+  font-size: 5vw;
+}
+
+.section01-button {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: 'Bebas Neue';
+  background-color: rgb(255, 255, 255);
+  border-radius: 4rem;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.section01-button-container{
+  font-size: 2vw;
+}
+
+.section01-button:hover {
+  background-color: grey;
+  color: black;
+}
+
+/* FITNESS SECTION  */
+
+.fitness-container {
+  margin-inline:auto;
+  background-color: #7f735e;
+}
+
+.fitness-text {
+  position: absolute;
+  width:50%;
+  top:200%;
+  margin-inline:auto;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.section-fitness-button {
+  font-size: 25px;
+  background-color: white;
+  border-radius: 4rem;
+  margin-left:3rem;
+  padding-left:2rem;
+  padding-right:2rem;
+  font-family: 'Bebas Neue';
+  
+}
+
+.section-fitness-button:hover {
+  background-color: grey;
+  color: black;
+}
+
+.section-fitness-heading {
+  color: white;
+  font-family: 'Bebas Neue';
+  font-size: 5vw;
+  margin-left: 3rem;
+}
+
+.section-fitness-subheading {
+  margin-left: 3rem;
+  color: white;
+  font-family: 'Jost';
+}
+
+.tcontainer {
+  margin-inline:auto;
+  padding-inline: var(--spacer);
+  background-color: #7f735e;
+}
+
+.tproduct-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.tcard {
+  aspect-ratio: 1 / 1.5;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.tcard:hover {
+  transform: scaleX(1.04) scaleY(1.04) scaleZ(1);
+  transition: transform .5s ease 0s;
+  max-width: 100%;
+  opacity: 0.6;
+}
+
+.engagement-header {
+  color: white;
+  font-family: 'Bebas Neue';
+  padding-top:5rem;
+}
