@@ -230,7 +230,8 @@ footer {
 
 /* Photographer Index Page  */
 .photographer-index-background-color {
-  background-color: #E2dbd1;
+  background-color: transparent;
+  width: auto;
 }
 
 .photographer-tile-box {
@@ -241,10 +242,10 @@ footer {
 }
 
 .photographer-tile-box:hover {
-  transform: scaleX(1.01) scaleY(1.01) scaleZ(1);
-  transition: transform .5s ease 0s;
+  transform: scaleX(1.00) scaleY(1.00) scaleZ(1);
+  transition: transform .3s ease 0s;
   max-width: 100%;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .padding-tile {
