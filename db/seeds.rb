@@ -144,3 +144,49 @@ photographer_12 = Photographer.find_or_create_by(
   profile_photo: "https://picture-this-production.s3.amazonaws.com/Jessica/Jessica+Smith.jpg",
   category: "Event"
 )
+
+# IMAGES #
+
+# Photographer: Marc Yebra 
+marc_01_image = Image.find_or_create_by(
+  photo: 'https://picture-this-production.s3.amazonaws.com/Marc/Fashion/Marc01.jpg', 
+  photographer_id: photographer_1 
+)
+marc_02_image = Image.find_or_create_by(
+  photo: 'https://picture-this-production.s3.amazonaws.com/Marc/Fashion/Marc02.jpg', 
+  photographer_id: photographer_1 
+)
+marc_03_image = Image.find_or_create_by(
+  photo: 'https://picture-this-production.s3.amazonaws.com/Marc/Fashion/Marc03.jpg', 
+  photographer_id: photographer_1 
+)
+marc_04_image = Image.find_or_create_by(
+  photo: 'https://picture-this-production.s3.amazonaws.com/Marc/Fashion/Marc04.jpg', 
+  photographer_id: photographer_1 
+)
+marc_05_image = Image.find_or_create_by(
+  photo: 'https://picture-this-production.s3.amazonaws.com/Marc/Fashion/Marc05.jpg', 
+  photographer_id: photographer_1 
+)
+marc_06_image = Image.find_or_create_by(
+  photo: 'https://picture-this-production.s3.amazonaws.com/Marc/Fashion/Marc06.jpg', 
+  photographer_id: photographer_1 
+)
+marc_07_image = Image.find_or_create_by(
+  photo: 'https://picture-this-production.s3.amazonaws.com/Marc/Fashion/Marc07.jpg', 
+  photographer_id: photographer_1 
+)
+marc_08_image = Image.find_or_create_by(
+  photo: 'https://picture-this-production.s3.amazonaws.com/Marc/Fashion/Marc08.jpg', 
+  photographer_id: photographer_1 
+)
+marc_09_image = Image.find_or_create_by(
+  photo: 'https://picture-this-production.s3.amazonaws.com/Marc/Fashion/Marc09.jpg', 
+  photographer_id: photographer_1 
+)
+marc_10_image = Image.find_or_create_by(
+  photo: 'https://picture-this-production.s3.amazonaws.com/Marc/Fashion/Marc10.jpg', 
+  photographer_id: photographer_1 
+)
+
+
