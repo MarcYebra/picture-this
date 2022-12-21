@@ -22,43 +22,34 @@ const PhotographerShow = (props) => {
 
   
   return (
-    <div className="section-show">
-      <div className="show-color-block">
-        <div className="container-show">
-          <div className="content-section-show">
-            <div className="title-show">
-              <div className="content-show">
-                <div className="grid-x grid-padding">
-                <div className="show-box">
-                  <div className="profile-photo"><img src={props.profile_photo} /></div>
-                    <div className="right-show" >
-                  <h1 className="name-show">{props.first_name} {props.last_name}</h1>
-                    <div className="show-space">
-                      <p>{props.category}</p>
-                      <p className="for-inquiries">For inquiries</p>
-                        <div className="email-show">{props.email}</div>
-                    </div>
-                      <div className="show-space">
-                        <p className="location-show">Location </p>
-                          <div className="location-show-props">{props.location} </div>
-                      </div>
-                        <div className="show-space">
-                          <p className="bio-show">Bio</p>
-                        <div className="bio-show-props">{props.description}</div>
-                        </div>
-                        </div>
-                        </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div className='show-body'>
+    <div className='show-wrapper'>
+      <div className='profilepic-show'>
+        <img src={props.profile_photo} />
+      </div>
+      <div className='photographer-info-show'>
+        <h2 className='fullname-show'>{props.first_name} {props.last_name}</h2>
+        <div className='category-show'>{props.category}</div>
+        <div className='location-show'>
+        <div className='location-icon'><img src='https://picture-this-production.s3.amazonaws.com/Icons/location-icon.png' /></div>
+          {props.location}
         </div>
+        <div className='mail-show'>
+        <div className='mail-icon'><img src='https://picture-this-production.s3.amazonaws.com/Icons/mail-show.png' /></div>
+          {props.email} 
+        </div>
+        <div className='photographer-description-show'>{props.description}</div>  
+        </div>    
       </div>
+
+    <div className='portfolio-show'>
+      *PORTFOLIO IMAGES*
         <img src={props.portfolio} />
-      <div className="remove-color">
-        <ReviewForm addNewReview = {props.addNewReview} reviewButton = {props.reviewButton} />
+    </div>
+
+      
+      <ReviewForm addNewReview = {props.addNewReview} reviewButton = {props.reviewButton} />
         {reviewTiles}
-      </div>
     </div>
   )
 }

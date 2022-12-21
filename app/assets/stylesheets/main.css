@@ -3,47 +3,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Caveat:wght@600&family=Cookie&family=Imbue:opsz@10..100&family=Jost&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
 
+.top-bar-background-color {
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(229 226 222);
+}
+
 .top-bar {
-  background-color:  #3b0f04; 
-  margin-bottom: 1rem;
+  background-color: rgb(215, 215, 215);
+  display: flex;
 }
 
 body {
-  background-color: #3b0f04;
+  background-color: #ffffff;
 }
 
 .top-bar ul {
   background-color: transparent;
-  margin-top: 1rem;
+}
 
+.top-bar-login-signup {
+  text-align: right;
+  background-color: rgb(235, 235, 235);
+}
+
+.login-signout-signup {
+  padding-right: 60px;
+  padding-top: 10px;
+  padding-bottom: 1px;
 }
 
 .logo {
   width: 200px;
   height: auto;
-  margin-left: 43vw;
-  margin-top: 1rem;
+  margin-left: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.login-signup-button {
-  color: rgb(255, 255, 255);
-  margin-right: 1vw;
-
+.profile-icon-image {
+  width: 25px;
+  display: inline-flex;
 }
 
 .home-page-layout {
   background-color: #ECDCC6;
 }
 
-/* .image-tile-index:hover {
-  transform: scaleX(1.04) scaleY(1.04) scaleZ(1);
-  transition: transform .5s ease 0s;
-  max-width: 100%;
-  opacity: 0.6;
-} */
+.border-top {
+  border-top: 1px solid rgb(229 226 222);
+  margin-left: 60px;
+  margin-right: 60px;
+
+}
+
+.border-top-bb {
+  border-top: 1px solid rgb(0, 0, 0);
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.border-bottom {
+  padding-top:2px;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.categories-top {
+  text-align: center;
+  padding: 5px;
+  display:grid;
+  gap: 0.1;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  padding-left: 60px;
+  padding-right: 60px;
+}
 
 footer {
   display: block;
+  background-color: black;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .about-us {
@@ -273,227 +313,6 @@ footer {
   width: 375px;
 }
 
-/* Photographer Show Page  */
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-.profileimagegoeshere {
-  font-style: italic;
-}
-
-.firstname-lastname {
-  font-weight:bolder
-}
-
-.section-show {
-  width: 100%;
-  min-height: 100vh;
-  background-color:#ECDCC6;
-}
-
-.container-show {
-  width: 80%;
-  display: block;
-  margin: auto;
-  padding-top: 100px;
-}
-
-.content-section-show {
-  float: left;
-  width: 55%;
-  text-align: left;
-}
-
-.content-section-show,
-.title-show {
-  text-transform: uppercase;
-  font-size: 28px;
-}
-
-.bio-show-props {
-  text-transform: none;
-}
-.content-section-show,
-.content h5{
-  margin-top: 20px;
-  color: black;
-  font-size: 21px;
-}
-
-.content-section-show,
-.content p {
-  margin-top: 10px;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-.content-section-show {
-  float: none;
-  width: 100%;
-  display: block;
-  margin:auto;
-}
-
-.content-section-show,
-.title-show {
-  text-align: center;
-  font-size: 19px;
-}
-
-.content-section-show,
-.content-show,
-.button {
-  text-align: center;
-}
-
-.content-section-show,
-.content-show,
-.button a {
-  padding: 9px 30px;
-}
-
-.image-section-show img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin:auto;
-}
-
-.image-section-show {
-  float: none;
-  width: 100%;
-}
-
-.content-section-show .content-show .button{
-	margin-top: 30px;
-}
-.content-section-show .content-show .button a{
-	background-color: #3d3d3d;
-	padding:12px 40px;
-	text-decoration: none;
-	color:#fff;
-	font-size: 25px;
-	letter-spacing: 1.5px;
-}
-
-.review-button-show {
-  text-align: center;
-}
-
-.location-show,
-.for-inquiries,
-.bio-show {
-  text-decoration: underline;
-}
-
-.email-show,
-.location-show-props,
-.bio-show-props {
-  margin-top: -1rem;
-}
-
-.show-space {
-  margin-bottom: 1.5rem;
-}
-
-.name-show {
-  color: #211300;
-}
-
-.show-color-block {
-  background-color: rgb(248, 240, 227);
-}
-
-.right-show {
-  margin-left: 30rem;
-}
-
-.show-box {
-  text-align: right;
-  margin-left: 5rem;
-}
-
-.email-show,
-.location-show-props {
-  text-transform: none;
-}
-
-.review-form-show {
-  margin-bottom: 3rem;
-}
-
-.center-submit-button {
-  text-align: center;
-}
-
-.review-form-backdrop {
-  text-align: center;
-  margin-left: 15%;
-  margin-right: 15%;
-}
-
-button, .button{
-  margin-top: 1rem;
-}
-
-/* REVIEW DISPLAY  */
-.review-display-tile {
-  text-align: center;
-  background-color: rgb(255, 248, 238);
-  margin-left: 10%;
-  margin-right: 10%;
-  border-radius: 1rem;
-  box-shadow:0px 0px 0px 0.5px #707070;
-}
-
-.review-tile {
-  color: rgb(13, 13, 13);
-  font-style: italic;
-  text-align: left;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.title-tile {
-  color:rgb(67, 67, 67);
-  font-size: 24px;
-  text-align: left;
-  padding-left: 1rem;
-}
-
-.review-show-page {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.username-tile {
-  text-align: left;
-  color: rgb(108, 108, 108);
-  margin-left: 1rem;
-}
-
-.timestamp-tile {
-  text-align: left;
-  color: rgb(108, 108, 108);
-  margin-right:3rem;
-  padding-left: 1rem;
-}
-
-.delete-button {
- text-align: right;
- margin-right: 1rem;
-}
-
-.delete {
-  background-color: #3d3d3d;
-}
-
-/* SIGN UP   */
-
-
 /* LOG IN  */
 .login-signup-page {
   background-color: #ECDCC6;
@@ -521,6 +340,12 @@ button, .button{
 }
 
 /* HOME PAGE  */
+.home-body {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top:30px;
+  padding-bottom: 30px;
+}
 
 .section01-image {
   width: 100%;
@@ -537,7 +362,7 @@ button, .button{
 .section01-heading-container {
   position:absolute;
   width: 30%;
-  top:17%;
+  top:23%;
   text-align: center;
   margin-inline: auto;
   overflow-y: auto;
@@ -616,10 +441,11 @@ button, .button{
   font-family: 'Jost';
 }
 
+/* ENGAGEMENT HOME  */
 .tcontainer {
   margin-inline:auto;
   padding-inline: var(--spacer);
-  background-color: #7f735e;
+
 }
 
 .tproduct-grid {
@@ -647,3 +473,85 @@ button, .button{
   font-family: 'Bebas Neue';
   padding-top:5rem;
 }
+
+/* Photographer Show Page  */
+.show-body {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 30px;
+}
+
+.show-wrapper {
+display: grid;
+grid-template-columns: repeat(2, 4fr);
+}
+
+.profilepic-show {
+  width:30vw;
+  margin-left: 10vw;
+}
+
+.photographer-info-show {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5rem;
+  text-align: center;
+}
+
+.email-location-show {
+  font-weight: 400;
+}
+
+.photographer-description-show {
+  font-weight: 300;
+  padding: 0.5rem;
+  opacity: 0.9;
+}
+
+.portfolio-show {
+  border: 1px black solid;
+  padding: 300px;
+  margin-top: 5rem;
+}
+
+.fullname-show {
+  border-bottom: 1px black solid;
+  font-family: 'Bebas Neue';
+  font-size: 50px;
+}
+
+.category-show {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.location-icon {
+  width: 15px;
+  padding-right: 5px;
+
+}
+
+.location-show {
+  display: flex;
+}
+
+.mail-icon {
+  width: 20px;
+  padding-right: 5px;
+
+}
+
+.mail-show {
+  display: flex;
+}
+
+
+/* .image-tile-index:hover {
+  transform: scaleX(1.04) scaleY(1.04) scaleZ(1);
+  transition: transform .5s ease 0s;
+  max-width: 100%;
+  opacity: 0.6;
+} */
