@@ -31,11 +31,11 @@ const PhotographerShow = (props) => {
         <h2 className='fullname-show'>{props.first_name} {props.last_name}</h2>
         <div className='category-show'>{props.category}</div>
         <div className='location-show'>
-        <div className='location-icon'><img src='https://picture-this-production.s3.amazonaws.com/Icons/location-icon.png' /></div>
+        <div className='location-icon'><img src='https://picture-this-production.s3.amazonaws.com/Icons/location-icon.png' alt='location icon' /></div>
           {props.location}
         </div>
         <div className='mail-show'>
-        <div className='mail-icon'><img src='https://picture-this-production.s3.amazonaws.com/Icons/mail-show.png' /></div>
+        <div className='mail-icon'><img src='https://picture-this-production.s3.amazonaws.com/Icons/mail-show.png' alt='email icon' /></div>
           {props.email} 
         </div>
         <div className='photographer-description-show'>{props.description}</div>  

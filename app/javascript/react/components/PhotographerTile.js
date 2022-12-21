@@ -3,22 +3,14 @@ import { Link } from 'react-router-dom'
 
 const PhotographerTile = (props) => {
   return (
-    <div className="tile-page">
-      <div className="photographer-tile-box" >
-          <Link to={`/photographers/${props.id}`} >  
-          <div className="padding-tile"></div>
-          <div className="info-photo-tile">
-            <p className="firstname-lastname">{props.first_name}</p>
-  
-            <img src={props.profile_photo} className="profile-photo-index" />
-            
-            <p className="firstname-lastname">{props.last_name}</p>
-            <p>{props.category} </p>
-          </div>
-          <div className="padding-tile-bottom"></div>
+      <div className='photographer-tile-box' >
+        <Link to={`/photographers/${props.id}`} >  
+          <p className='photographer-tile-fullname'>{props.first_name}</p>
+            <img src={props.profile_photo} className='profile-photo-index' />
+            <p className='photographer-tile-fullname'>{props.last_name}</p>
+          <p className='photographer-tile-category'>{props.category} </p>
         </Link>
       </div>
-    </div>
   )
 }
 

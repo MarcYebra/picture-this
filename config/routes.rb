@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :photographers, only: [:index, :show, :create] do
         resources :reviews, only: [:create, :show, :destroy] 
+          resources :images, only: [:index, :show, :create]
       end
     end
   end 
