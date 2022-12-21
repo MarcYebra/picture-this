@@ -44,7 +44,6 @@ const PhotographerShow = (props) => {
 
     <div className='portfolio-show'>
       *PORTFOLIO IMAGES*
-        <img src={props.portfolio} />
     </div>
 
       
