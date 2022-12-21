@@ -52,7 +52,7 @@ photographer_3 = Photographer.find_or_create_by(
   description: "Hi there! I know getting headshots can be dreadful, which is why people come to me for their portraits. I like to make my photo shoots fun and relaxed. I will try and do as much work for you as possible so that all you have to do is bring your smiling face and a positive attitude! My turn around dates tend to be fast because I know how important it is for you to see/use the images. If you have any questions or concerns please reach me by email. Hope to see you in my studio soon!",
   location: "Beacon Hill",
   profile_photo: "https://picture-this-production.s3.amazonaws.com/Alex/Alex.jpg",
-  category: "Portraits"
+  category: "Portrait"
 )
 
 photographer_4 = Photographer.find_or_create_by(
@@ -62,7 +62,7 @@ photographer_4 = Photographer.find_or_create_by(
   description: "I have been a proud owner of many pets throughout my life. Dogs, cats, snakes, bunnies, frogs, lizards, birds, the list honestly can go on forever. Since I was a kid, there were always some sort of animal following me home. You want to show the world how cute your pet is, I completley understand! I hope to meet your adorable creature soon!",
   location: "Allston",
   profile_photo: "https://picture-this-production.s3.amazonaws.com/Nick/Nick.jpg",
-  category: "Pets"
+  category: "Pet"
 )
 
 photographer_5 = Photographer.find_or_create_by(
@@ -72,7 +72,7 @@ photographer_5 = Photographer.find_or_create_by(
   description: "Since the age of five my father signed me up for tball and I haven't put my glove down since. After I finished playing college baseball at Boston University, I decided to stay a part of the sports world in any way I could. Mixing my passion for photography with my love of sports, I can proudly say I've been running my own sports photography business for seven years. As you can see from my portfolio, I've photographed many athletes from all ranges of sports. If you have any questions please reach out. I'm up for any challenge. Game on! ",
   location: "Back Bay",
   profile_photo: "https://picture-this-production.s3.amazonaws.com/Michael/Michael.jpg",
-  category: "Sports"
+  category: "Sport"
 )
 
 photographer_6 = Photographer.find_or_create_by(
@@ -122,7 +122,7 @@ photographer_10 = Photographer.find_or_create_by(
   description: "I always tell people I have the best job in the world because I get to create images with talented, motivated indiviuals. Being a celebrity photographer has granted me unique opportunities to peak inside a world that I've always found mysterious, yet interesting. Through my lens and creative vision, I want to reveal to the world the truth behind these iconic names. Originally from Los Angeles, I currently reside in the greater Boston area.",
   location: "Beacon Hill",
   profile_photo: "https://picture-this-production.s3.amazonaws.com/James/James.jpg",
-  category: "Influencer/Celebrity"
+  category: "Celebrity"
 )
 
 photographer_11 = Photographer.find_or_create_by(
@@ -142,5 +142,5 @@ photographer_12 = Photographer.find_or_create_by(
   description: "Hi! If you have a work event, party, fundraiser, or any sort of gathering you'd like photographed, please reach out so I can learn more! I enjoy getting to walk around and capture the perfect little moments that we often overlook. With an eye for candid moments, allow me to be the photographer that documents your special event!",
   location: "Roxbury",
   profile_photo: "https://picture-this-production.s3.amazonaws.com/Jessica/Jessica+Smith.jpg",
-  category: "Events"
+  category: "Event"
 )
