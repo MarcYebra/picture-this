@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Caveat:wght@600&family=Cookie&family=Imbue:opsz@10..100&family=Jost&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
 
+/* HOME PAGE  */
 .top-bar-background-color {
   background-color: rgb(255, 255, 255);
   border-bottom: 1px solid rgb(229, 226, 222);
@@ -23,7 +24,7 @@ body {
 
 .top-bar-login-signup {
   text-align: right;
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(249, 249, 249);
 }
 
 .login-signout-signup {
@@ -81,19 +82,21 @@ body {
 
 footer {
   display: block;
-  background-color: black;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  background-color: rgb(249, 249, 249);
+  margin-top: 5rem;
+  padding-bottom: 4rem;
+  border-top: 1px solid rgb(229, 226, 222);
 }
 
 .about-us {
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
 .footer {
   text-align: center;
   color: white;
+  padding-top: 0.5rem;
 }
 
 .pinterest img {
@@ -254,18 +257,11 @@ footer {
   box-shadow: 0px 0px 0px 3px rgb(167, 204, 246);
 }
 
-#user_email,
-#user_password,
-#user_username,
-#user_password_confirmation{
-  border-radius: 1rem;
-}
-
 #user_email:hover,
 #user_username:hover,
 #user_password:hover,
 #user_password_confirmation:hover {
-  box-shadow: 0px 0px 0px 3px rgb(167, 204, 246);
+  box-shadow: 0px 0px 0px 2px rgb(167, 204, 246);
 }
 
 /* Photographer Index Page  */
@@ -304,30 +300,106 @@ footer {
 }
 
 /* LOG IN  */
+label {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+[type='submit'] {
+  width: 100%;
+  height: 45px;
+  line-height: 2rem;
+  border: none;
+  background-color: black;
+  color: white;
+  margin-top: 1rem;
+  border-radius: 0.3rem;
+}
+
+#user_email,
+#user_username,
+#user_password,
+#user_password_confirmation {
+  border-radius: 0.3rem;
+  border: 1px solid black;
+}
+
 .login-signup-page {
-  background-color: #ECDCC6;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  border-radius: 2rem;
+  flex: 1 1 auto;
+  margin: 2.5em auto 0px;
+  padding: 0px;
+  width: 100%;
+  min-width: 450px;
+  max-width: 450px;
 }
 
-.login-title-log-in {
+.signin-title {
   text-align: center;
-  color: #3d3d3d;
+  border-bottom: 0.5px solid rgb(197, 197, 197);
 }
 
-.login-background-image {
-  background-color:#ECDCC6;
+.signin-description {
+  text-align: center;
+  opacity: 0.8;
 }
 
 .flash-message {
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .profile-photo {
   width: 400px;
 }
+
+.login-devise-links {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.or-separator {
+  font-size: 14px;
+  margin: 12px 0px 0px;
+  line-height: 21px;
+  font-weight: 500;
+  color: black;
+  position: relative;
+  text-align: center;
+}
+
+.or-separator::before {
+  left: 0px; 
+}
+
+.or-separator::after {
+  right: 0px;
+}
+
+.or-separator::after {
+  position:absolute;
+  display: inline-block;
+  content: "";
+  top: 50%;
+  width: calc(50% - 1em);
+  height: 0px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.or-separator::before {
+  position:absolute;
+  display: inline-block;
+  content: "";
+  top: 50%;
+  width: calc(50% - 1em);
+  height: 0px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+/* LINKS DEVISE  */
+
 
 /* HOME PAGE  */
 .home-body {
