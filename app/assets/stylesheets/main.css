@@ -82,10 +82,9 @@ body {
 
 footer {
   display: block;
-  background-color: rgb(249, 249, 249);
   margin-top: 5rem;
-  padding-bottom: 4rem;
   border-top: 1px solid rgb(229, 226, 222);
+  text-align: center;
 }
 
 .about-us {
@@ -364,6 +363,17 @@ label {
 }
 
 .signup-description {
+  text-align: center;
+  opacity: 0.8;
+}
+
+/* FORGOT PASSWORD  */
+.password-page-title {
+  text-align: center;
+  border-bottom: 0.5px solid rgb(197, 197, 197);
+}
+
+.password-page-description {
   text-align: center;
   opacity: 0.8;
 }
