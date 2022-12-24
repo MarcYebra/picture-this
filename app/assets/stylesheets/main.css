@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Caveat:wght@600&family=Cookie&family=Imbue:opsz@10..100&family=Jost&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
 
+
 /* HOME PAGE  */
 .top-bar-background-color {
   background-color: rgb(255, 255, 255);
@@ -351,7 +352,6 @@ label {
 
 /* SIGN UP  */
 .signup-background {
-  /* background-color: pink; */
   margin-left: 60px;
   margin-right: 60px;
   padding-bottom: 30px;
@@ -554,7 +554,7 @@ grid-template-columns: repeat(2, 4fr);
 
 .portfolio-show {
   border: 1px black solid;
-  padding: 300px;
+  padding: 200px;
   margin-top: 5rem;
 }
 
@@ -588,6 +588,89 @@ grid-template-columns: repeat(2, 4fr);
 .mail-show {
   display: flex;
 }
+
+ /* REVIEW ON PHOTOGRAPHER SHOW PAGE  */
+
+.review-show-container {
+  margin-top: 24px;
+}
+
+.rare-photographer-show {
+  letter-spacing: .06rem;
+  font-size: 24px;
+}
+
+.review-button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 0.5px solid rgb(197, 197, 197);
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+/* REVIEW FORM  */
+.write-review-button {
+  text-decoration: underline;
+  text-align: left;
+  color: rgb(22,122,146);
+  margin-top: 10px;
+}
+
+.submit-review-button {
+  width: 100%;
+  height: 45px;
+  line-height: 2rem;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  margin-top: 1rem;
+  border-radius: 0.3rem;
+}
+
+/* REVIEW TILES  */
+.review-tile-container {
+  border-bottom: 0.5px solid rgb(197, 197, 197);
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
+.username-review-tile {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(92, 92, 95)var(--text-medium);
+  font: 1.3rem/1.8 var(--font-body);
+  letter-spacing: .06rem;
+}
+
+.title-review-tile {
+  color: var(--text-dark);
+  font: 1.6rem/1.3 var(--font-body-bold);
+  letter-spacing: .06rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.review-tile-title-body {
+  text-align: left;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+.body-review-tile {
+  color: rgb(92, 92, 95)var(--text-medium);
+  font: 1.3rem/1.8 var(--font-body);
+  letter-spacing: .06rem;
+  margin-bottom: 10px;
+  overflow-wrap: break-word;
+}
+
+.delete-review {
+  text-decoration: underline;
+  opacity: 70%;
+
+}
+
+
 
 
 /* .image-tile-index:hover {
