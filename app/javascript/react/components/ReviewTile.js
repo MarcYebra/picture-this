@@ -39,24 +39,18 @@ if (props.currentUser) {
 }
 
   return (
-    <div className='tile-page'>
-      <div className='review-display-tile'>
-        <div className='delete-button'>
-      <button  className= 'button delete' onClick={handleDeleteReview}>
-        Delete 
-      </button>
+    <div className='review-tile-container'>
+      <div className='username-review-tile'>{props.username} 
+        <div>{props.created_at}</div>
       </div>
-
-        <p className='username-tile'>{props.username} | Rating:  {props.rating} / 5</p>
-        <p className='title-tile'>{props.title}</p>
-        <div className='review-show-space' >
-        </div>
-        <p className='review-tile'>"{props.body}"</p>
-        <p className='timestamp-tile'>{props.created_at} </p>
+      <div>{props.rating}/5</div>
+      <div className='review-tile-title-body'>
+        <div className='title-review-tile'>{props.title}</div>
+        <div className='body-review-tile'>{props.body}</div>
+        <button onClick={handleDeleteReview} className='delete-review'>Delete</button>
       </div>
     </div>
   )
 }
-
 
 export default ReviewTile

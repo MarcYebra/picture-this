@@ -7,21 +7,18 @@ user_1 = User.create(
   email: "marc@gmail.com",
   password: "password",
   username: "marc_klaus",
-  location: "Cambridge"
 )
 
 user_2 = User.create(
   email: "ashley@gmail.com",
   password: "password",
   username: "aashley12",
-  location: "Allston"
 )
 
 user_3 = User.create(
   email: "richard@gmail.com",
   password: "password",
   username: "richard.white12",
-  location: "Beacon Hill"
 )
 
 ##### Photographers#####
