@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Caveat:wght@600&family=Cookie&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Caveat:wght@600&family=Cookie&family=Imbue:opsz@10..100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Caveat:wght@600&family=Cookie&family=Imbue:opsz@10..100&family=Jost&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
 
 
 /* HOME PAGE  */
-.top-bar-background-color {
-  background-color: rgb(255, 255, 255);
-  border-bottom: 1px solid rgb(229, 226, 222);
+.top-bar-home {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 5px;
 }
 
 .top-bar {
@@ -23,27 +22,46 @@ body {
   background-color: transparent;
 }
 
-.top-bar-login-signup {
-  text-align: right;
-  background-color: rgb(249, 249, 249);
+.si-su {
+  margin-right: 60px;
+  margin-top: 16px;
+  text-align: center;
 }
 
-.login-signout-signup {
-  padding-right: 60px;
-  padding-top: 10px;
-  padding-bottom: 1px;
+.su-button {
+  font-size: 15px;
+  font-weight: 600;
+  background-color: rgb(227, 227, 227);
+  color: rgb(0, 0, 0);
+  border-radius: 4rem;
+  padding-top: .7rem;
+  padding-bottom: .7rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.si-button {
+  font-size: 15px;
+  font-weight: 600;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 4rem;
+  padding-top: .7rem;
+  padding-bottom: .7rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .logo {
   width: 200px;
   height: auto;
-  margin-left: 5rem;
+  margin-left: 60px;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 .profile-icon-image {
-  width: 24px;
+  width: 20px;
   display: inline-flex;
 }
 
@@ -55,7 +73,6 @@ body {
   border-top: 1px solid rgb(229, 226, 222);
   margin-left: 60px;
   margin-right: 60px;
-
 }
 
 .border-top-bb {
@@ -73,12 +90,13 @@ body {
 
 .categories-top {
   text-align: center;
-  padding: 5px;
   display:grid;
   gap: 0.1;
   grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
   padding-left: 60px;
   padding-right: 60px;
+  padding-top:15px;
+  padding-bottom: 15px;
 }
 
 footer {
@@ -118,6 +136,81 @@ footer {
   margin-top: 2rem;
 }
 
+/* HOME PAGE  */
+.home-body {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: -20px;
+}
+
+.text-images-flex {
+  white-space: nowrap;
+}
+
+.fab-photographer {
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Playfair Display';
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.find-home {
+  font-style: italic;
+  display: inline-flex;
+}
+
+.section01-button {
+  font-size: 20px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 4rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.sb {
+  text-align: center;
+}
+
+.fBB {
+  margin-top: 48px;
+}
+
+.tproduct-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 2fr));
+}
+
+.tcard img {
+  border-radius: 1rem;
+}
+
+.tcard {
+  padding-bottom: 1rem;
+}
+
+.tcard-stack1 {
+  margin-top: -13rem;
+}
+
+.tcard-stack3 {
+  padding-top: 4rem;
+}
+
+.tcard-stack4 {
+  padding-top: 3rem;
+}
+
+.tcard-stack6 {
+  margin-top: -13rem;
+}
+
+/* SHOW  */
 .all-photographers {
   color: white;
 }
@@ -378,143 +471,6 @@ label {
   opacity: 0.8;
 }
 
-/* LINKS DEVISE  */
-
-
-/* HOME PAGE  */
-.home-body {
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top:30px;
-  padding-bottom: 30px;
-}
-
-.section01-image {
-  width: 100%;
-}
-
-.section02-image {
-  width: 100%;
-}
-
-.section02-image:hover {
-  background-color: grey;
-}
-
-.section01-heading-container {
-  position:absolute;
-  width: 30%;
-  top:23%;
-  text-align: center;
-  margin-inline: auto;
-  overflow-y: auto;
-  overflow-x: hidden;
-  text-overflow: ellipsis;
-}
-
-.section01-heading {
-  color: white;
-  font-family: 'Bebas Neue';
-  font-size: 5vw;
-}
-
-.section01-button {
-  text-align: center;
-  color: rgb(0, 0, 0);
-  font-family: 'Bebas Neue';
-  background-color: rgb(255, 255, 255);
-  border-radius: 4rem;
-  padding-left: 2vw;
-  padding-right: 2vw;
-}
-
-.section01-button-container{
-  font-size: 2vw;
-}
-
-.section01-button:hover {
-  background-color: grey;
-  color: black;
-}
-
-/* FITNESS SECTION  */
-
-.fitness-container {
-  margin-inline:auto;
-  background-color: #7f735e;
-}
-
-.fitness-text {
-  position: absolute;
-  width:50%;
-  top:200%;
-  margin-inline:auto;
-  overflow-y: auto;
-  overflow-x: auto;
-}
-
-.section-fitness-button {
-  font-size: 25px;
-  background-color: white;
-  border-radius: 4rem;
-  margin-left:3rem;
-  padding-left:2rem;
-  padding-right:2rem;
-  font-family: 'Bebas Neue';
-  
-}
-
-.section-fitness-button:hover {
-  background-color: grey;
-  color: black;
-}
-
-.section-fitness-heading {
-  color: white;
-  font-family: 'Bebas Neue';
-  font-size: 5vw;
-  margin-left: 3rem;
-}
-
-.section-fitness-subheading {
-  margin-left: 3rem;
-  color: white;
-  font-family: 'Jost';
-}
-
-/* ENGAGEMENT HOME  */
-.tcontainer {
-  margin-inline:auto;
-  padding-inline: var(--spacer);
-
-}
-
-.tproduct-grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-}
-
-.tcard {
-  aspect-ratio: 1 / 1.5;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  border: 1px solid rgb(255, 255, 255);
-}
-
-.tcard:hover {
-  transform: scaleX(1.04) scaleY(1.04) scaleZ(1);
-  transition: transform .5s ease 0s;
-  max-width: 100%;
-  opacity: 0.6;
-}
-
-.engagement-header {
-  color: white;
-  font-family: 'Bebas Neue';
-  padding-top:5rem;
-}
-
 /* Photographer Show Page  */
 .show-body {
   padding-left: 60px;
@@ -605,7 +561,7 @@ grid-template-columns: repeat(2, 4fr);
   flex-wrap: wrap;
   justify-content: space-between;
   border-bottom: 0.5px solid rgb(197, 197, 197);
-  padding-top: 20px;
+  padding-top: 3rem;
   padding-bottom: 10px;
 }
 

@@ -42,9 +42,9 @@ const PhotographerShow = (props) => {
         </div>    
       </div>
 
-    <div className='portfolio-show'>
+    {/* <div className='portfolio-show'>
       *PORTFOLIO IMAGES*
-    </div>
+    </div> */}
 
       <div className='review-button-container'>
         <h3 className='rare-photographer-show'>Ratings & Reviews</h3>
