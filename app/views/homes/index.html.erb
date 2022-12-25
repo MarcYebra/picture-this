@@ -1,42 +1,71 @@
 <div class='home-body'>
-  <div class='section01-image'>
-    <%= image_tag('https://picture-this-production.s3.amazonaws.com/Home+Page/section01.jpg', alt:'home page')%>
+<div class='text-images-flex'>
+<div class='fBB'>
+  <div class='fab-photographer'>
+    <div class='find-home'>Find </div> and <div class='find-home'>Book</div> 
+    <div>your <div class='find-home'>dream</div> Photographer</div>
   </div>
-    <div class='section01-heading-container'>
-      <h2 class='section01-heading'>Find and book your dream photographer</h2>
-        <p class='section01-button-container'>
-          <a href='/photographers' class='section01-button'>All Photographers</a>
-        </p>
-    </div>
+    <div class='sb'><a href='/photographers' class='section01-button'>Get Started</a></div>
+</div>
 
-    <div class='tcontainer'>
-      <div class='tproduct-grid'>
+  <div class='tproduct-grid'>
+    <div class='tcard-stack1'>
+      <div class='tcard'>
+        <%= image_tag('https://picture-this-production.s3.amazonaws.com/Connor/Graduation/Graduation03.jpg', alt:'graduation') %>
+      </div>
         <div class='tcard'>
-          <a href='/photographers'><%= image_tag('https://picture-this-production.s3.amazonaws.com/Molly/Molly01.jpg', alt:'engagements') %></a>
-        </div>
-            <div class='tcard'>
-          <a href='/photographers'><%= image_tag('https://picture-this-production.s3.amazonaws.com/Molly/Molly06.jpg', alt:'engagements') %></a>
-        </div>
-            <div class='tcard'>
-          <a href='/photographers'><%= image_tag('https://picture-this-production.s3.amazonaws.com/Molly/Molly03.jpg', alt:'engagements') %></a>
-        </div>
-            <div class='tcard'>
-          <a href='/photographers'><%= image_tag('https://picture-this-production.s3.amazonaws.com/Molly/Molly08.jpg', alt:'engagements') %></a>
-        </div>
+        <%= image_tag('https://picture-this-production.s3.amazonaws.com/Home/Events.jpg', alt:'event') %>
       </div>
     </div>
 
-  <div class='fitness-container'>
-    <%= image_tag('https://picture-this-production.s3.amazonaws.com/Home+Page/section-fitness.png', alt:'home page')%>
-    <div class='fitness-text'>
-          <h1 class='section-fitness-heading'>Elevate Your Game</h1>
-          <h5 class='section-fitness-subheading'>You need a photographer who can keep up.</h5>
-          <div class='section-fitness-button-container'>
-            <a href='/photographers' class='section-fitness-button'>Browse</a>
-          </div>
+    <div class='tcard-stack2'>
+      <div class='tcard'>
+        <%= image_tag('https://picture-this-production.s3.amazonaws.com/Marc/Fashion/Marc06.jpg', alt:'fashion') %>
       </div>
+      <div class='tcard'>
+        <%= image_tag('https://picture-this-production.s3.amazonaws.com/Home/Food.jpg', alt:'food') %>
       </div>
-  </div>  
+    </div>
+
+    <div class='tcard-stack3'>
+      <div class='tcard'>
+        
+        <%= image_tag('https://picture-this-production.s3.amazonaws.com/James/James10.jpg', alt:'celebrity') %>
+      </div>
+      <div class='tcard'>
+        <%= image_tag('https://picture-this-production.s3.amazonaws.com/Home/Family.jpg', alt:'family') %>
+      </div>
+    </div>
+
+    <div class='tcard-stack4'>
+      <div class='tcard'>
+        <%= image_tag('https://picture-this-production.s3.amazonaws.com/Home/Wedding.jpg', alt:'wedding') %>
+      </div>
+      <div class='tcard'>
+        <%= image_tag('https://picture-this-production.s3.amazonaws.com/Home/Pets.jpg', alt:'pets') %>
+      </div>
+    </div>
+
+    <div class='tcard-stack5'>
+      <div class='tcard'>
+        <%= image_tag('https://picture-this-production.s3.amazonaws.com/Home/Portraits.jpg', alt:'portrait') %>
+      </div>
+        <div class='tcard'>
+        <%= image_tag('https://picture-this-production.s3.amazonaws.com/Home/Sports.jpg', alt:'sport') %>
+      </div>
+    </div>
+
+    <div class='tcard-stack6'>
+      <div class='tcard'>   
+        <%= image_tag('https://picture-this-production.s3.amazonaws.com/Home/Fitness.jpg', alt:'fitness') %>
+      </div>
+      <div class='tcard'>
+        <%= image_tag('https://picture-this-production.s3.amazonaws.com/Molly/Molly03.jpg', alt:'engagement') %>
+      </div>
+    </div>
+  </div>
+  </>
+</div>
 
 
 
