@@ -3,8 +3,9 @@ import PhotographerTile from './PhotographerTile'
 
 
 const PhotographerIndex = (props) => {
-  
   const [ photographers, setPhotographers ] = useState([])
+
+  
 
   const getPhotographers = async () => {
     try {
@@ -40,8 +41,14 @@ const PhotographerIndex = (props) => {
   })
 
 return (
-  <div className='photographer-tile'>
-        {photographerTiles}
+  <div>
+    <div className='join-ph-roster'>Join our roster of photographers </div>
+    <div className='cphb-container'>
+      <a href='/photographers/new'  className='create-ph-button'>Create Account</a>
+    </div>
+    <div className='photographer-tile'>
+      {photographerTiles}
+    </div>
   </div>
   ) 
 }
