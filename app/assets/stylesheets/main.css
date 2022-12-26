@@ -311,32 +311,47 @@ footer {
 
 /* Photographer Index Page  */
 .join-ph-roster {
+  position: absolute;
+  top: 48%;
+  left: 13%;
+  transform: translate(-50%, -50%);
   margin-left: 60px;
   margin-right: 60px;
-  text-align: center;
-  font-size: 60px;
-  font-weight: 600;
-  text-align: center;
+  font-size: 3vw;
   font-family: 'Playfair Display';
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+}
+
+.join-container {
+  text-align: left;
+}
+
+.ph-index-top-image {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top:30px;
+}
+
+.join-button {
+  position: relative;
+  text-align: left;
 }
 
 .cphb-container {
-  padding-left: 60px;
-  padding-right: 60px;
-  text-align: center;
+  position: absolute;
+  bottom: 27%;
+  margin-left: 85px;
 }
 
 .create-ph-button {
-  font-size: 20px;
+  font-size: 1vw;
+  font-weight: 500;
   background-color: rgb(0, 0, 0);
   color: white;
-  border-radius: 4rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 50px;
-  padding-right: 50px;
+  border-radius: 4vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 
 .photographer-tile-box {
