@@ -42,13 +42,21 @@ const PhotographerIndex = (props) => {
 
 return (
   <div>
-    <div className='join-ph-roster'>Join our roster of photographers </div>
-    <div className='cphb-container'>
-      <a href='/photographers/new'  className='create-ph-button'>Create Account</a>
+    <div className='join-button'>
+      <div className='ph-index-top-image'>
+          <img src='https://picture-this-production.s3.amazonaws.com/Home/Photographer-Index.png' alt='create account banner image' />
+      </div>
+        <div className='join-container'>
+          <div className='join-ph-roster'>Join our <div class='find-home'>talented</div><div>group of<div><div class='find-home'>photographers</div></div></div> </div>
+        </div>
+        <div className='cphb-container'>
+          <a href='/photographers/new'  className='create-ph-button'>Create Account</a>
+        </div>
+
     </div>
     <div className='photographer-tile'>
       {photographerTiles}
-    </div>
+    </div> 
   </div>
   ) 
 }
