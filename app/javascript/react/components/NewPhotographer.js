@@ -75,55 +75,54 @@ const NewPhotographer = (props) => {
   }
 
   return (
-    <div className='back-image' >
-      <div className='flex-container align-center' >
-      <div className='border-new-photographer'>
-        <div className='new-photographer-component'>
-          <h1 className='photographer-form'>Welcome</h1>
-            <p className='join-roster'>Join our roster full of talented photographers</p>
-
+    <div>
+      <div className='newp-background'>
+        <div className='newp-page'>
+          <h2 className='newp-title'>New Photographer</h2>
+            <p className='newp-description'>Are you a photographer? Create an account so people can book you!</p>
+            
         <form onSubmit={handleSubmitNewPhotographer}>
           <label>
-            First Name
-            <input className='form-box' type="text" name="first_name" onChange={handleInputChange} value={newPhotographer.first_name}/>
+            <div className='newp-text'>First Name</div>
+            <input type="text" name="first_name" onChange={handleInputChange} value={newPhotographer.first_name}/>
           </label>
 
           <label>
-            Last Name
-            <input className='form-box' type="text" name="last_name" onChange={handleInputChange} value={newPhotographer.last_name}/>
+          <div className='newp-text'>Last Name</div>
+            <input type="text" name="last_name" onChange={handleInputChange} value={newPhotographer.last_name}/>
           </label>
 
           <label>
-            Email
-            <input className='form-box' type="text" name="email" onChange={handleInputChange} value={newPhotographer.email}/>
+          <div className='newp-text'>Email</div>
+            <input  type="text" name="email" onChange={handleInputChange} value={newPhotographer.email}/>
           </label>
 
           <label>
-            Bio
-            <input className='form-box' type="text" name="description" onChange={handleInputChange} value={newPhotographer.description}/>
+          <div className='newp-text'>Bio</div>
+            <input type="text" name="description" onChange={handleInputChange} value={newPhotographer.description}/>
           </label>
 
           <label>
-            Category
-            <select className='form-box' type="text" name="category" onChange={handleInputChange} value={newPhotographer.category}>
+          <div className='newp-text'>Category</div>
+            <select type="text" name="category" onChange={handleInputChange} value={newPhotographer.category}>
               {categoryOptions}
             </select>
           </label>
 
           <label>
-            Location 
-            <select className='form-box' type="text" name="location" onChange={handleInputChange} value={newPhotographer.location}>
+          <div className='newp-text'>Location</div>
+            <select type="text" name="location" onChange={handleInputChange} value={newPhotographer.location}>
               {locationOptions}
               </select> 
           </label>
-          <div className='center-new-photographer-button'>
+ 
           <input className=' button photographer' type="submit" value="Create Account" />
-          </div>
+
         </form>
+
+          </div>
         </div>
-      </div> 
-    </div> 
-  </div>  
+    </div>
   )
 }
 
