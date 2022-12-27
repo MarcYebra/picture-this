@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
 
-
 /* HOME PAGE  */
 .top-bar-home {
   display: flex;
@@ -95,6 +94,7 @@
   padding-bottom: 15px;
 }
 
+/* FOOTER  */
 footer {
   display: block;
   border-top: 1px solid rgb(0, 0, 0);
@@ -103,16 +103,13 @@ footer {
   margin-right: 60px;
 }
 
+.footer {
+  padding: 20px;
+}
+
 .about-us {
   color: rgb(0, 0, 0);
   text-align: center;
-}
-
-.footer {
-  text-align: center;
-  color: white;
-  margin-left: 60px;
-  margin-right: 60px;
 }
 
 .pinterest img {
@@ -449,7 +446,7 @@ footer {
   padding-bottom: 30px;
 }
 
-/* LOG IN  */
+/* SIGN IN  */
 label {
   font-size: 14px;
   font-weight: 600;
@@ -475,6 +472,10 @@ label {
 #user_password_confirmation {
   border-radius: 0.3rem;
   border: 1px solid black;
+}
+
+.sign-in-container {
+  padding-bottom: 30px;
 }
 
 .login-signup-page {
@@ -596,6 +597,10 @@ label {
 }
 
 /* FORGOT PASSWORD  */
+.fp-container {
+  padding-bottom: 30px;
+}
+
 .password-page-title {
   text-align: center;
   border-bottom: 0.5px solid rgb(197, 197, 197);
