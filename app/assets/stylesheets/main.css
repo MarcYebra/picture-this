@@ -14,8 +14,6 @@
   display: flex;
 }
 
-
-
 .top-bar ul {
   background-color: transparent;
 }
@@ -99,8 +97,10 @@
 
 footer {
   display: block;
-  border-top: 1px solid rgb(229, 226, 222);
+  border-top: 1px solid rgb(0, 0, 0);
   text-align: center;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .about-us {
@@ -111,7 +111,8 @@ footer {
 .footer {
   text-align: center;
   color: white;
-  padding-top: 0.5rem;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .pinterest img {
@@ -130,17 +131,17 @@ footer {
 }
 
 .footer-info {
-  margin-top: 2rem;
+  margin-top: 2px;
+  border-top: 1px solid rgb(0, 0, 0);
 }
 
 /* HOME PAGE  */
 .home-body {
-  padding-left: 60px;
-  padding-right: 60px;
+  margin-left: 60px;
+  margin-right: 60px;
   padding-top: -20px;
-  background-image: linear-gradient(rgba(6, 22, 50, 0) 49.02%, rgba(6, 22, 50, 0.008) 52.42%, rgba(6, 22, 50, 0.035) 55.82%, rgba(6, 22, 50, 0.082) 59.22%, rgba(6, 22, 50, 0.15) 62.62%, rgba(6, 22, 50, 0.23) 66.02%, rgba(6, 22, 50, 0.333) 69.41%, rgba(6, 22, 50, 0.443) 72.81%, rgba(6, 22, 50, 0.557) 76.21%, rgba(6, 22, 50, 0.667) 79.61%, rgba(6, 22, 50, 0.77) 83.01%, rgba(6, 22, 50, 0.85) 86.41%, rgba(6, 22, 50, 0.918) 89.8%, rgba(6, 22, 50, 0.965) 93.2%, rgba(6, 22, 50, 0.992) 96.6%, rgb(6, 22, 50) 100%);
+  padding-bottom: 2rem;
 }
-
 
 .text-images-flex {
   white-space: nowrap;
@@ -208,6 +209,67 @@ footer {
 .tcard-stack6 {
   margin-top: -13rem;
 }
+
+.ml-mr-home {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 1.5rem;
+}
+
+.line-d-home {
+  border-top: 1px solid rgb(229, 226, 222);
+  padding-bottom: 2rem;
+}
+.home-bhh-wrapper {
+  grid-column-gap: calc(1rem * 2 + 1px);
+  grid-template-columns: repeat(20, 1fr);
+}
+
+.fitness-container {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+
+.fitness-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-right: 1px solid rgb(229, 226, 222);
+  margin-right: -4rem;
+}
+
+.engagement-wrapper {
+  margin-left: 10rem;
+}
+
+.fitness-h-img {
+  width:24vw;
+}
+
+.engagement-h-img {
+  width: 30rem;
+}
+
+.fitness-h-info {
+  margin-left: .5rem;
+  margin-right: .5rem;
+  flex-direction: column;
+}
+
+.fitness-h-title {
+    font-weight: 700;
+    font-family: 'Playfair Display';
+  }
+
+.fitness-h-sub {
+  font-family: 'Playfair Display';
+}
+
+.fitness-h-description {
+  font-weight: 300;
+  padding: 0.5rem;
+  opacity: 0.9;
+}
+
 
 /* SHOW  */
 .all-photographers {

@@ -23,10 +23,6 @@
       </div>
     </div>
 
-
-
-
-
 <div class='flash-message' >
   <%- flash.each do |key, value| -%>
     <div class="flash flash-<%= key %>">
@@ -53,7 +49,6 @@
   <div class='border-top-bb'></div>
   <div class='border-bottom'></div>
 
-
   <%= yield %>
 
   <%= javascript_include_tag 'application' %>
@@ -64,7 +59,7 @@
     <%- end -%>
   <%- end -%>
   <%= javascript_pack_tag 'application' %>
-  
+
   <footer>
     <div class="footer-info">
       <a class="about-us" href="/aboutme">About</a>  
