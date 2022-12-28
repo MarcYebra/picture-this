@@ -80,48 +80,39 @@ const NewPhotographer = (props) => {
         <div className='newp-page'>
           <h2 className='newp-title'>New Photographer</h2>
             <p className='newp-description'>Are you a photographer? Create an account so people can book you!</p>
-            
-        <form onSubmit={handleSubmitNewPhotographer}>
-          <label>
-            <div className='newp-text'>First Name</div>
-            <input type="text" name="first_name" onChange={handleInputChange} value={newPhotographer.first_name}/>
-          </label>
-
-          <label>
-          <div className='newp-text'>Last Name</div>
-            <input type="text" name="last_name" onChange={handleInputChange} value={newPhotographer.last_name}/>
-          </label>
-
-          <label>
-          <div className='newp-text'>Email</div>
-            <input  type="text" name="email" onChange={handleInputChange} value={newPhotographer.email}/>
-          </label>
-
-          <label>
-          <div className='newp-text'>Bio</div>
-            <input type="text" name="description" onChange={handleInputChange} value={newPhotographer.description}/>
-          </label>
-
-          <label>
-          <div className='newp-text'>Category</div>
-            <select type="text" name="category" onChange={handleInputChange} value={newPhotographer.category}>
-              {categoryOptions}
-            </select>
-          </label>
-
-          <label>
-          <div className='newp-text'>Location</div>
-            <select type="text" name="location" onChange={handleInputChange} value={newPhotographer.location}>
-              {locationOptions}
-              </select> 
-          </label>
- 
-          <input className=' button photographer' type="submit" value="Create Account" />
-
-        </form>
-
-          </div>
+            <form onSubmit={handleSubmitNewPhotographer}>
+              <label>
+                <div className='newp-text'>First Name</div>
+                <input type="text" name="first_name" onChange={handleInputChange} value={newPhotographer.first_name}/>
+              </label>
+              <label>
+                <div className='newp-text'>Last Name</div>
+                <input type="text" name="last_name" onChange={handleInputChange} value={newPhotographer.last_name}/>
+              </label>
+              <label>
+                <div className='newp-text'>Email</div>
+                <input  type="text" name="email" onChange={handleInputChange} value={newPhotographer.email}/>
+              </label>
+              <label>
+                <div className='newp-text'>Bio</div>
+                <input type="text" name="description" onChange={handleInputChange} value={newPhotographer.description}/>
+              </label>
+              <label>
+                <div className='newp-text'>Category</div>
+                <select type="text" name="category" onChange={handleInputChange} value={newPhotographer.category}>
+                  {categoryOptions}
+                </select>
+              </label>
+              <label>
+                <div className='newp-text'>Location</div>
+                <select type="text" name="location" onChange={handleInputChange} value={newPhotographer.location}>
+                  {locationOptions}
+                </select> 
+              </label>
+            <input className=' button photographer' type="submit" value="Create Account" />
+          </form>
         </div>
+      </div>
     </div>
   )
 }
