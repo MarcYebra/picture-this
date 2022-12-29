@@ -52,7 +52,14 @@ return (
         <div className='cphb-container'>
           <a href='/photographers/new'  className='create-ph-button'>Create Account</a>
         </div>
-
+        <div className='view-all-index'>
+          <div className='a-v'>
+            <h3 className='view-all-text-index' >View All</h3>
+            <div className= 'arrow-img'>
+              <img  src='https://picture-this-production.s3.amazonaws.com/Icons/arrow.png' alt='arrow' />
+            </div>
+          </div>
+        </div>
     </div>
     <div className='photographer-tile'>
       {photographerTiles}

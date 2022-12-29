@@ -412,10 +412,10 @@ footer {
   padding-right: 1vw;
 }
 
+/* PHOTOGRAPHER TILE  */
 .photographer-tile-box {
   text-align: center;
-  background-color: #ececec;
-  border: 1px solid rgb(205, 205, 205);
+  background-color: #e9e9e9;
 }
 
 .photographer-tile-box:hover {
@@ -424,27 +424,50 @@ footer {
 
 .photographer-tile-fullname {
   text-align: center;
+  color: rgb(0, 0, 0);
   font-size: 35px;
 }
 
 .profile-photo-index {
-  width: 375px;
+  width: 100%;
 }
 
 .photographer-tile-category {
-  font-weight: 300;
-  opacity: 0.9;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+}
+
+.arrow-img {
+  width: 1rem;
+  margin-left: 9px;
+  margin-top: -3px;
 }
 
 .photographer-tile {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
-  padding-left:60px;
-  padding-right: 60px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  padding: 60px;
+  padding-top: 15px;
 }
+
+.view-all-index {
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+.a-v {
+  display: flex;
+}
+
+.view-all-text-index {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 21.6px;
+}
+
 
 /* SIGN IN  */
 label {
@@ -686,7 +709,6 @@ grid-template-columns: repeat(2, 4fr);
 }
 
  /* REVIEW ON PHOTOGRAPHER SHOW PAGE  */
-
 .review-show-container {
   margin-top: 24px;
 }
