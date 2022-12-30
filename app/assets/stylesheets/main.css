@@ -207,67 +207,6 @@ footer {
   margin-top: -13rem;
 }
 
-.ml-mr-home {
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-bottom: 1.5rem;
-}
-
-.line-d-home {
-  border-top: 1px solid rgb(229, 226, 222);
-  padding-bottom: 2rem;
-}
-.home-bhh-wrapper {
-  grid-column-gap: calc(1rem * 2 + 1px);
-  grid-template-columns: repeat(20, 1fr);
-}
-
-.fitness-container {
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-}
-
-.fitness-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  border-right: 1px solid rgb(229, 226, 222);
-  margin-right: -4rem;
-}
-
-.engagement-wrapper {
-  margin-left: 10rem;
-}
-
-.fitness-h-img {
-  width:24vw;
-}
-
-.engagement-h-img {
-  width: 30rem;
-}
-
-.fitness-h-info {
-  margin-left: .5rem;
-  margin-right: .5rem;
-  flex-direction: column;
-}
-
-.fitness-h-title {
-    font-weight: 700;
-    font-family: 'Playfair Display';
-  }
-
-.fitness-h-sub {
-  font-family: 'Playfair Display';
-}
-
-.fitness-h-description {
-  font-weight: 300;
-  padding: 0.5rem;
-  opacity: 0.9;
-}
-
-
 /* SHOW  */
 .all-photographers {
   color: white;
@@ -415,7 +354,7 @@ footer {
 /* PHOTOGRAPHER TILE  */
 .photographer-tile-box {
   text-align: center;
-  background-color: #e9e9e9;
+  background-color: #e3e3e3;
 }
 
 .photographer-tile-box:hover {
