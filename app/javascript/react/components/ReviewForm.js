@@ -57,26 +57,24 @@ const ReviewForm = (props) => {
     }
 
   return (
-    <div>
-      
-      <button className='write-review-button' type="button" onClick={displayReviewForm}>Write A Review</button>
-      
-      <form onSubmit={handleSubmitAddNewReview} className={`new-review ${displayForm}`} >
-      <ErrorLists errors={errors} />
-
-        <label htmlFor="title">Title*
-          <input id="title" type="text" name="title" value={newReview.title} onChange={handleFormChange}/>
-        </label>
-        
-        <label htmlFor="body">Description*
-          <textarea id="body" rows="4" type="text" name="body" value={newReview.body} onChange={handleFormChange}/>
-        </label>
-      
-        <label htmlFor="rating">Rating*
-          <input className='form-box' id="rating" type="number" name="rating" value={newReview.rating} onChange={handleFormChange}/>
-        </label>
-
-        <button className='submit-review-button'>Submit</button>
+    <div>  
+      <button className='review-form-button' type="button" onClick={displayReviewForm}>
+        Write A Review
+      </button>
+        <form onSubmit={handleSubmitAddNewReview} className={`new-review ${displayForm}`} >
+          <ErrorLists errors={errors} />
+          <label htmlFor="title">Title*
+            <input id="title" type="text" name="title" value={newReview.title} onChange={handleFormChange}/>
+          </label> 
+          <label htmlFor="body">Description*
+            <textarea id="body" rows="4" type="text" name="body" value={newReview.body} onChange={handleFormChange}/>
+          </label>  
+          <label htmlFor="rating">Rating*
+            <input className='form-box' id="rating" type="number" name="rating" value={newReview.rating} onChange={handleFormChange}/>
+          </label>
+        <button className='review-form-submit-button'>
+          Submit
+        </button>
       </form>
     </div>
   )

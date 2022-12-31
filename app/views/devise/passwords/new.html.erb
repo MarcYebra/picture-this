@@ -1,20 +1,14 @@
-<div class='fp-container'>
-<div class='login-signup-page'>
-<h2 class='password-page-title'>Reset your password</h2>
-<p class='password-page-description'>Please provide the email you used for your account.</p>
-
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+<div class='forgot-password-page'>
+  <h2 class='forgot-password-title'>Reset your password</h2>
+    <p class='forgot-password-description'>Please provide the email you used for your account.</p>
+  <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Continue" %>
-  </div>
-<% end %>
-
-</div>
+    <div class="field">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Continue" %>
+    </div>
+  <% end %>
 </div>

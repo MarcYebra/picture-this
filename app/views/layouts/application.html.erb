@@ -7,17 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class='top-bar-home'>
-  <div class='logo'>
+  <div class='home-top-bar'>
+  <div class='home-logo'>
     <a href="/"><%= image_tag("https://picture-this-production.s3.amazonaws.com/Icons/Picture-This-Logo.png", alt: "Logo")%></a>
   </div>
-  <div class='si-su'>
+  <div class='home-sign-in-sign-up'>
       <ul>
         <%- if current_user -%>
           <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
         <%- else -%>
-          <%= link_to 'Sign In', new_user_session_path, :class => 'si-button' %> 
-          <%= link_to 'Sign Up', new_user_registration_path, :class => 'su-button'  %>
+          <%= link_to 'Sign In', new_user_session_path, :class => 'home-sign-in-button' %> 
+          <%= link_to 'Sign Up', new_user_registration_path, :class => 'home-sign-up-button'  %>
         <%- end -%>
       </ul>
       </div>
@@ -31,8 +31,8 @@
   <%- end -%>
   </div>
 
-  <div class='border-top'></div>
-    <div class='categories-top'>
+  <div class='home-top-border'></div>
+    <div class='home-top-categories'>
       <a href="/photographers">Celebrity</a>
       <a href="/photographers">Engagement</a>
       <a href="/photographers">Event</a>
@@ -46,8 +46,8 @@
       <a href="/photographers">Sport</a>
       <a href="/photographers">Wedding</a>
     </div>
-  <div class='border-top-bb'></div>
-  <div class='border-bottom'></div>
+  <div class='home-bottom-border'></div>
+  <div class='home-border-bottom'></div>
 
   <%= yield %>
 
@@ -62,7 +62,6 @@
 
   <div class='footer'>
   <footer>
-    <a class="about-us" href="/aboutme">About</a>  
     <div class="icons">
       <a href="https://www.pinterest.com/Picture_This_/" target="_blank" class="pinterest"><%= image_tag("https://picture-this-production.s3.amazonaws.com/Icons/Pinterest.png", alt: "pinterest")%></a>
       <a href="https://www.instagram.com/instagram/?hl=en" target="_blank" class="instagram"><%= image_tag("https://picture-this-production.s3.amazonaws.com/Icons/instagram.png", alt: "instagram")%></a>

@@ -60,22 +60,22 @@ const PhotographerShowContainer = (props) => {
   
   return (
     <div>
-    <PhotographerShow
-      key={photographer.id}
-      id={photographer.id}
-      first_name={photographer.first_name}
-      last_name = {photographer.last_name}
-      email = {photographer.email}
-      description = {photographer.description}
-      category = {photographer.category}
-      location = {photographer.location}
-      profile_photo = {photographer.profile_photo}
-      reviews={reviews}
-      setReviews={setReviews}
-      addNewReview={addNewReview}
-      reviewButton = {reviewButton}
-      params = {props.match.params}
-    />
+      <PhotographerShow
+        key={photographer.id}
+        id={photographer.id}
+        first_name={photographer.first_name}
+        last_name = {photographer.last_name}
+        email = {photographer.email}
+        description = {photographer.description}
+        category = {photographer.category}
+        location = {photographer.location}
+        profile_photo = {photographer.profile_photo}
+        reviews={reviews}
+        setReviews={setReviews}
+        addNewReview={addNewReview}
+        reviewButton = {reviewButton}
+        params = {props.match.params}
+      />
     </div>
   )
 }

@@ -40,14 +40,16 @@ if (props.currentUser) {
 
   return (
     <div className='review-tile-container'>
-      <div className='username-review-tile'>{props.username} 
+      <div className='review-tile-username'>{props.username} 
         <div>{props.created_at}</div>
       </div>
       <div>{props.rating}/5</div>
       <div className='review-tile-title-body'>
-        <div className='title-review-tile'>{props.title}</div>
-        <div className='body-review-tile'>{props.body}</div>
-        <button onClick={handleDeleteReview} className='delete-review'>Delete</button>
+        <div className='review-tile-title'>{props.title}</div>
+        <div className='review-tile-body'>{props.body}</div>
+        <button onClick={handleDeleteReview} className='review-tile-delete-review'>
+          Delete
+        </button>
       </div>
     </div>
   )

@@ -1,19 +1,16 @@
 <div class='sign-in-container'>
-  <div class='login-signup-page'>
-    <h2 class='signin-title'>Sign In</h2>
-      <p class='signin-description'>Sign in so you can find photographers, plan your photo shoots, and write reviews!</p>
-
+  <div class='sign-in-page'>
+    <h2 class='sign-in-title'>Sign In</h2>
+      <p class='sign-in-description'>Sign in so you can find photographers, plan your photo shoots, and write reviews!</p>
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="field">
       <%= f.label :email %>
       <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
     </div>
-    <br>
     <div class="field">
       <%= f.label :password %>
       <%= f.password_field :password, autocomplete: "current-password" %>
     </div>
-
     <div class="actions">
       <%= f.submit "Continue" %>
     </div>
@@ -21,8 +18,6 @@
     <div class='or-separator'>
     <span>or</span>
     </div>
-    <div class='signin-line'></div>
-
     <div class='login-devise-links'>
       <%= render "devise/shared/links" %>
     </div>

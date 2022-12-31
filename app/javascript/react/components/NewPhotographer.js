@@ -75,45 +75,43 @@ const NewPhotographer = (props) => {
   }
 
   return (
-    <div>
-      <div className='newp-background'>
-        <div className='newp-page'>
-          <h2 className='newp-title'>New Photographer</h2>
-            <p className='newp-description'>Are you a photographer? Create an account so people can book you!</p>
+      <div className='new-photographer-background'>
+        <div className='new-photographer-page'>
+          <h2 className='new-photographer-title'>New Photographer</h2>
+            <p className='new-photographer-description'>Are you a photographer? Create an account so people can book you!</p>
             <form onSubmit={handleSubmitNewPhotographer}>
               <label>
-                <div className='newp-text'>First Name</div>
-                <input type="text" name="first_name" onChange={handleInputChange} value={newPhotographer.first_name}/>
+                <div className='new-photographer-text'>First Name</div>
+                  <input type="text" name="first_name" onChange={handleInputChange} value={newPhotographer.first_name}/>
               </label>
               <label>
-                <div className='newp-text'>Last Name</div>
-                <input type="text" name="last_name" onChange={handleInputChange} value={newPhotographer.last_name}/>
+                <div className='new-photographer-text'>Last Name</div>
+                  <input type="text" name="last_name" onChange={handleInputChange} value={newPhotographer.last_name}/>
               </label>
               <label>
-                <div className='newp-text'>Email</div>
-                <input  type="text" name="email" onChange={handleInputChange} value={newPhotographer.email}/>
+                <div className='new-photographer-text'>Email</div>
+                  <input  type="text" name="email" onChange={handleInputChange} value={newPhotographer.email}/>
               </label>
               <label>
-                <div className='newp-text'>Bio</div>
-                <input type="text" name="description" onChange={handleInputChange} value={newPhotographer.description}/>
+                <div className='new-photographer-text'>Bio</div>
+                  <input type="text" name="description" onChange={handleInputChange} value={newPhotographer.description}/>
               </label>
               <label>
-                <div className='newp-text'>Category</div>
-                <select type="text" name="category" onChange={handleInputChange} value={newPhotographer.category}>
-                  {categoryOptions}
-                </select>
+                <div className='new-photographer-text'>Category</div>
+                  <select type="text" name="category" onChange={handleInputChange} value={newPhotographer.category}>
+                    {categoryOptions}
+                  </select>
               </label>
               <label>
-                <div className='newp-text'>Location</div>
-                <select type="text" name="location" onChange={handleInputChange} value={newPhotographer.location}>
-                  {locationOptions}
-                </select> 
+                <div className='new-photographer-text'>Location</div>
+                  <select type="text" name="location" onChange={handleInputChange} value={newPhotographer.location}>
+                    {locationOptions}
+                  </select> 
               </label>
             <input className=' button photographer' type="submit" value="Create Account" />
           </form>
         </div>
       </div>
-    </div>
   )
 }
 

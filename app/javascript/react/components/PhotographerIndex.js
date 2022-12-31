@@ -42,26 +42,32 @@ const PhotographerIndex = (props) => {
 
 return (
   <div>
-    <div className='join-button'>
-      <div className='ph-index-top-image'>
-          <img src='https://picture-this-production.s3.amazonaws.com/Home/Photographer-Index.png' alt='create account banner image' />
+    <div className='photographer-index-sign-up-button'>
+      <div className='photographer-index-image-banner'>
+        <img src='https://picture-this-production.s3.amazonaws.com/Home/Photographer-Index.png' alt='create account' />
       </div>
-        <div className='join-container'>
-          <div className='join-ph-roster'>Join our <div class='find-home'>talented</div><div>group of<div><div class='find-home'>photographers</div></div></div> </div>
+        <div className='photographer-index-join-container'>
+          <div className='photographer-index-image-banner-title'>Join our <div class='photographer-index-image-banner-subtitle '> talented </div>
+            <div>group of
+              <div>
+                <div class='photographer-index-image-banner-subtitle '>photographers</div>
+              </div>
+            </div> 
+          </div>
         </div>
-        <div className='cphb-container'>
-          <a href='/photographers/new'  className='create-ph-button'>Create Account</a>
+        <div className='photographer-index-create-account-container'>
+          <a href='/photographers/new'  className='photographer-index-create-account-button'>Create Account</a>
         </div>
-        <div className='view-all-index'>
-          <div className='a-v'>
-            <h3 className='view-all-text-index' >View All</h3>
-            <div className= 'arrow-img'>
-              <img  src='https://picture-this-production.s3.amazonaws.com/Icons/arrow.png' alt='arrow' />
+        <div className='photographer-index-view-all'>
+          <div className='photographer-index-view-all-display'>
+            <h3 className='photographer-index-view-all-text' >View All</h3>
+            <div className= 'photographer-index-arrow-img'>
+              <img  src='https://picture-this-production.s3.amazonaws.com/Icons/arrow.png' alt='arrow right' />
             </div>
           </div>
         </div>
     </div>
-    <div className='photographer-tile'>
+    <div className='photographer-index-tiles'>
       {photographerTiles}
     </div> 
   </div>
