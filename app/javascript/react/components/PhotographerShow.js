@@ -22,35 +22,33 @@ const PhotographerShow = (props) => {
 
   
   return (
-    <div className='show-body'>
-    <div className='show-wrapper'>
-      <div className='profilepic-show'>
-        <img src={props.profile_photo} />
-      </div>
-      <div className='photographer-info-show'>
-        <h2 className='fullname-show'>{props.first_name} {props.last_name}</h2>
-        <div className='category-show'>{props.category}</div>
-        <div className='location-show'>
-        <div className='location-icon'><img src='https://picture-this-production.s3.amazonaws.com/Icons/location-icon.png' alt='location icon' /></div>
-          {props.location}
+    <div className='photographer-show-body'>
+      <div className='photographer-show-wrapper'>
+        <div className='photographer-show-profile-pic'>
+          <img src={props.profile_photo} />
         </div>
-        <div className='mail-show'>
-        <div className='mail-icon'><img src='https://picture-this-production.s3.amazonaws.com/Icons/mail-show.png' alt='email icon' /></div>
-          {props.email} 
+          <div className='photographer-show-info'>
+            <h2 className='photographer-show-full-name'>{props.first_name} {props.last_name}</h2>
+          <div className='photographer-show-category'>{props.category}</div>
+          <div className='photographer-show-location'>
+            <div className='photographer-show-location-icon'>
+              <img src='https://picture-this-production.s3.amazonaws.com/Icons/location-icon.png' alt='location icon' />
+            </div>
+            {props.location}
+          </div>
+        <div className='photographer-show-mail'>
+        <div className='photographer-show-mail-icon'>
+          <img src='https://picture-this-production.s3.amazonaws.com/Icons/mail-show.png' alt='email icon' />
         </div>
-        <div className='photographer-description-show'>{props.description}</div>  
+        {props.email} 
+        </div>
+        <div className='photographer-show-description'>{props.description}</div>  
         </div>    
       </div>
 
-    {/* <div className='portfolio-show'>
-      *PORTFOLIO IMAGES*
-    </div> */}
-
-      <div className='review-button-container'>
-        <h3 className='rare-photographer-show'>Ratings & Reviews</h3>
-        <div className='review-button'>
+      <div className='review-show-button-container'>
+        <h3 className='review-show-title'>Ratings & Reviews</h3>
           <ReviewForm addNewReview = {props.addNewReview} reviewButton = {props.reviewButton} />
-        </div>
       </div>
       <div className='review-show-container'>
       {reviewTiles}
