@@ -4,7 +4,6 @@ import ReviewForm from "./ReviewForm"
 
 const PhotographerShow = (props) => {
   const reviewTiles = props.reviews.map((review) => {
-
     return (
       <ReviewTile
         key={review.id}
@@ -20,7 +19,6 @@ const PhotographerShow = (props) => {
     )
   })
 
-  
   return (
     <div className='photographer-show-body'>
       <div className='photographer-show-wrapper'>

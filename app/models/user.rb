@@ -5,6 +5,6 @@ class User < ApplicationRecord
 
   has_many :reviews
 
-  # mount_uploader :profile_photo, ProfilePhotoUploader
+  mount_uploader :profile_photo, ProfilePhotoUploader
   
 end
