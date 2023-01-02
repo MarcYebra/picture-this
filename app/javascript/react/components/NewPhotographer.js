@@ -11,21 +11,24 @@ const NewPhotographer = (props) => {
     location: "",
   })
 
+// Locations photographers can select from 
   const locations = ['', 'Allston', 'Beacon Hill', 'Back Bay', 'Bay Village', 'Beacon Hill', 'Brighton', 'Cambridge', 'Charlestown', 'Chinatown-Leather District', 'Dorchester', 'Downtown', 'East Boston', 'Fenway-Kenmore', 'Hyde Park', 'Jamaica Plain', 'Mid-Dorchester', 'North End', 'Roslindale', 'Roxbury', 'South Boston', 'South End', 'West End', 'West Roxbury', 'Wharf District' ]
-  const categories = ['', 'Fashion', 'Portraits', 'Graduation', 'Family', 'Pets', 'Sports', 'Engagement', 'Food', 'Event', 'Wedding', 'Fitness', 'Influencer/Celebrity']
 
   const locationOptions = locations.map(location => {
-    return (
-      <option key={location} value={location}>
-        {location}
-      </option>
-    )
-  })
+      return (
+        <option key={location} value={location}>
+          {location}
+        </option>
+      )
+    })
+
+// Categories photographers can select from
+  const categories = ['', 'Fashion', 'Portraits', 'Graduation', 'Family', 'Pets', 'Sports', 'Engagement', 'Food', 'Event', 'Wedding', 'Fitness', 'Influencer/Celebrity']
 
   const categoryOptions = categories.map(category => {
     return (
       <option key={category} value={category}>
-        {category}
+      {category}
       </option>
     )
   })
@@ -62,12 +65,10 @@ const NewPhotographer = (props) => {
         setRedirect(photographerBody.photographer.id)
       } else if (photographerBody.error[0] === "You must be a photographer") {
         alert("You must be a photographer")
-      }  
-      
+      }     
     } catch(err) {
       console.error(`Error in fetch: ${err.message}`)
     }
-    
   }
 
   if (redirect) {

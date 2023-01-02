@@ -5,8 +5,6 @@ import PhotographerTile from './PhotographerTile'
 const PhotographerIndex = (props) => {
   const [ photographers, setPhotographers ] = useState([])
 
-  
-
   const getPhotographers = async () => {
     try {
       const response = await fetch("/api/v1/photographers")
