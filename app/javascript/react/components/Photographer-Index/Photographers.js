@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import PhotographerTile from './PhotographerTile'
 import BannerImage from './BannerImage'
+import CategoryBar from './CategoryBar'
 
 const Photographers = (props) => {
   const [ photographers, setPhotographers ] = useState([])
@@ -41,12 +42,9 @@ const Photographers = (props) => {
 return (
   <div>
     <BannerImage />
+    <CategoryBar />
     <div className='photographer-index-view-all'>
       <div className='photographer-index-view-all-display'>
-        <h3 className='photographer-index-view-all-text' >View All</h3>
-          <div className= 'photographer-index-arrow-img'>
-            <img  src='https://picture-this-production.s3.amazonaws.com/Icons/arrow.png' alt='arrow right' />
-          </div>
         </div>
       </div>
     <div className='photographer-index-tiles'>
