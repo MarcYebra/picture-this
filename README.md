@@ -1,6 +1,6 @@
-<h1 align="center">Picture This</h1>
 
 <p align="center">
+
   <img src="https://picture-this-production.s3.amazonaws.com/Icons/Picture-This-Logo.png" alt="Picture This logo" width="12rem" />
 
 <i>Picture This is an application that allows users to find professional photographers within the Boston area. You can view individual photographers profiles and see reviews left by others. </i>
