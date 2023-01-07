@@ -67,30 +67,6 @@
   color: black;
 }
 
-.home-top-categories {
-  text-align: center;
-  display:grid;
-  gap: 0.1;
-  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top:15px;
-  padding-bottom: 15px;
-}
-
-.home-bottom-border {
-  border-top: 1px solid rgb(0, 0, 0);
-  margin-left: 60px;
-  margin-right: 60px;
-}
-
-.home-border-bottom {
-  padding-top:2px;
-  border-bottom: 1px solid rgb(0, 0, 0);
-  margin-left: 60px;
-  margin-right: 60px;
-}
-
 .profile-icon-image {
   width: 20px;
   display: inline-flex;
@@ -249,9 +225,26 @@ footer {
   padding-right: 1vw;
 }
 
+.categories-container {
+  text-align: center;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top:24px;
+}
+
+.categories-button {
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  padding: 5px;
+  border-radius: 3rem;
+  margin: 4px;
+}
+
 .photographer-index-view-all {
   margin-left: 60px;
-  margin-top: 30px;
 }
 
 .photographer-index-view-all-display {
