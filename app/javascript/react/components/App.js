@@ -1,5 +1,5 @@
 import React from 'react'
-import PhotographerIndex from './PhotographerIndex'
+import Photographers from './Photographer-Index/Photographers'
 import PhotographerShowContainer from './PhotographerShowContainer'
 import NewPhotographer from './NewPhotographer'
 
@@ -9,7 +9,7 @@ export const App = (props) => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/photographers" component={PhotographerIndex} />
+        <Route exact path="/photographers" component={Photographers} />
         <Route exact path="/photographers/new" component={NewPhotographer} />
         <Route exact path="/photographers/:id" component={PhotographerShowContainer} />
       </Switch>
