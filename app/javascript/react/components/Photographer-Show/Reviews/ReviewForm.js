@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ErrorLists from './ErrorLists'
+import ErrorLists from '../../ErrorLists'
 import _ from 'lodash'
 
 const ReviewForm = (props) => {

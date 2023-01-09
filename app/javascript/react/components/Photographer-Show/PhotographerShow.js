@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import ReviewTile from "./ReviewTile"
-import ReviewForm from "./ReviewForm"
+import ReviewTile from "./Reviews/ReviewTile"
+import ReviewForm from "./Reviews/ReviewForm"
 
 const PhotographerShow = (props) => {
   const reviewTiles = props.reviews.map((review) => {
