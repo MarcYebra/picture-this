@@ -1,6 +1,6 @@
 import React from 'react'
 import Photographers from './Photographer-Index/Photographers'
-import PhotographerShowContainer from './PhotographerShowContainer'
+import PhotographerShowContainer from './Photographer-Show/PhotographerShowContainer'
 import NewPhotographer from './NewPhotographer'
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
