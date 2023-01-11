@@ -31,10 +31,10 @@ const ReviewTile = (props) => {
 }
   }
 
-let memberDelete
+let currentUserDelete
 if (props.currentUser) {
   if (props.currentUser.id === props.review.user_id) {
-    memberDelete = <button onClick={handleDeleteReview}>Delete</button>
+    currentUserDelete = <button onClick={handleDeleteReview}>Delete</button>
   }
 }
 
