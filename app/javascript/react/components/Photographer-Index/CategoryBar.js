@@ -1,3 +1,4 @@
+import { filter } from 'lodash'
 import React from 'react'
 
 const CategoryBar = (props) => {
@@ -23,3 +24,4 @@ const CategoryBar = (props) => {
 }
 
 export default CategoryBar
+
