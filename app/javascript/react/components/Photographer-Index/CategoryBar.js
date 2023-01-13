@@ -1,23 +1,25 @@
 import { filter } from 'lodash'
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const CategoryBar = (props) => {
+
   return (
     <div>
       <div className='categories-container'>
-          <a href="/photographers" className='categories-button'>View All</a>
-          <a href="/photographers" className='categories-button'>Celebrity</a>
-          <a href="/photographers" className='categories-button'>Engagement</a>
-          <a href="/photographers" className='categories-button'>Event</a>
-          <a href="/photographers" className='categories-button'>Family</a>
-          <a href="/photographers" className='categories-button'>Fashion</a>
-          <a href="/photographers" className='categories-button'>Fitness</a>
-          <a href="/photographers" className='categories-button'>Food</a>
-          <a href="/photographers" className='categories-button'>Graduation</a>
-          <a href="/photographers" className='categories-button'>Pet</a>
-          <a href="/photographers" className='categories-button'>Portrait</a>
-          <a href="/photographers" className='categories-button'>Sport</a>
-          <a href="/photographers" className='categories-button'>Wedding</a>
+        <Link to='/photographers'><div className='categories-button'>View All</div></Link>  
+        <Link to='/photographers'><div className='categories-button'>Celebrity</div></Link>  
+        <Link to='/photographers'><div className='categories-button'>Engagement</div></Link>  
+        <Link to='/photographers'><div className='categories-button'>Event</div></Link>  
+        <Link to='/photographers'><div className='categories-button'>Family</div></Link>  
+        <Link to='/photographers'><div className='categories-button'>Fashion</div></Link>  
+        <Link to='/photographers'><div className='categories-button'>Fitness</div></Link>  
+        <Link to='/photographers'><div className='categories-button'>Food</div></Link>  
+        <Link to='/photographers'><div className='categories-button'>Graduation</div></Link>  
+        <Link to='/photographers'><div className='categories-button'>Pet</div></Link>  
+        <Link to='/photographers'><div className='categories-button'>Portrait</div></Link>  
+        <Link to='/photographers'><div className='categories-button'>Sport</div></Link>  
+        <Link to='/photographers'><div className='categories-button'>Wedding</div></Link>  
       </div>
     </div>
   )
