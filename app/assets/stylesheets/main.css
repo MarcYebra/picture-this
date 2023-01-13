@@ -235,12 +235,16 @@ footer {
 }
 
 .categories-button {
-  background-color: black;
-  color: white;
+  border: 2px solid black;
   font-weight: 500;
   padding: 5px;
   border-radius: 3rem;
   margin: 4px;
+}
+
+.categories-button:hover {
+  background-color: black;
+  color: white;
 }
 
 .photographer-index-view-all {
