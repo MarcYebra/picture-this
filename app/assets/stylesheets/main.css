@@ -225,6 +225,23 @@ footer {
   padding-right: 1vw;
 }
 
+.banner-image-portrait-photographers {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.banner-image-portrait-button {
+  font-size: 1vw;
+  font-weight: 500;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 4vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
 .categories-container {
   text-align: center;
   display:grid;
