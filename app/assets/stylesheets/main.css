@@ -55,12 +55,6 @@
   padding-right: 1rem;
 }
 
-.home-top-border {
-  border-top: 1px solid rgb(229, 226, 222);
-  margin-left: 60px;
-  margin-right: 60px;
-}
-
 .photographer-tile-component,
 .media-group,
 .photographer-tile, a {
@@ -74,18 +68,9 @@
 
 /* HOME PAGE - BODY */
 .home-body {
-  margin-left: 60px;
-  margin-right: 60px;
+  margin: 60px;
   padding-top: -20px;
   padding-bottom: 2rem;
-}
-
-.home-text-images-flex {
-  white-space: nowrap;
-}
-
-.home-text-container {
-  margin-top: 48px;
 }
 
 .home-title {
@@ -102,7 +87,7 @@
   display: inline-flex;
 }
 
-.home-banner-img {
+.home-top-button {
   text-align: center;
 }
 
@@ -120,11 +105,7 @@
 .home-photos-wrapper {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 2fr));
-}
-
-.home-column-1 {
-  margin-top: -13rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
 .home-img {
@@ -133,6 +114,10 @@
 
 .home-img img {
   border-radius: 1rem;
+}
+
+.home-column-1 {
+  margin-top: -13rem;
 }
 
 .home-column-3 {
@@ -297,7 +282,7 @@ footer {
 /* PHOTOGRAPHER TILE  */
 .photographer-tile-container {
   text-align: center;
-  background-color: #e3e3e3;
+  background-color: #000000;
 }
 
 .photographer-tile-container:hover {
@@ -306,17 +291,18 @@ footer {
 
 .photographer-tile-profile-pic {
   width: 100%;
+  border: 2px white solid;
 }
 
 .photographer-tile-full-name {
   text-align: center;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 35px;
 }
 
 .photographer-tile-category {
   font-weight: 400;
-  color: rgb(0, 0, 0);
+  color: rgb(225, 225, 225);
 }
 
 /* SIGN IN  */
@@ -503,7 +489,7 @@ label {
 
 .photographer-show-wrapper {
 display: grid;
-grid-template-columns: repeat(2, 4fr);
+grid-template-columns: repeat(2, 2fr);
 }
 
 .photographer-show-profile-pic {
