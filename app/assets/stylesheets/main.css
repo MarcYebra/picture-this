@@ -286,12 +286,12 @@ footer {
 }
 
 .photographer-tile-container:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .photographer-tile-profile-pic {
   width: 100%;
-  border: 2px white solid;
+  border: 2px rgb(227, 226, 226) solid;
 }
 
 .photographer-tile-full-name {
