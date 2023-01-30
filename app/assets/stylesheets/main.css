@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
 
 /* HOME PAGE - TOP BAR  */
+.top-bar-header {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #758c91;
+  color: white;
+  letter-spacing: .07rem;
+  vertical-align: middle;
+  font-weight: 400;
+}
+
+.text:hover {
+  text-decoration: underline;
+}
+
 .top-bar {
   display: flex;
   text-align: center;
@@ -11,52 +25,41 @@
 }
 
 .home-top-bar {
-  background-color: #636b60;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
+  background-color: #333332;
 }
 
-.top-bar-left {
-  margin: 15px 30px;
+.home-sign-buttons {
+  color: white;
 }
+
 .home-logo {
-  width: 200px;
-  margin-left: 130px;
+  width: 150px;
+  text-align: center;
+}
+
+.home-logo:hover {
+  opacity: 0.7;
 }
 
 .home-sign-in-sign-up {
   text-align: center;
+  font-size: 15px;
+  color: #ffffff;
 }
 
-.home-sign-in-button {
-  font-size: 15px;
-  font-weight: 600;
-  background-color: rgb(0, 0, 0);
+.home-sign-in-sign-up, ul {
+  margin-left: 0rem;
   color: white;
-  border-radius: 4rem;
-  padding-top: .7rem;
-  padding-bottom: .7rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.home-sign-up-button {
-  font-size: 15px;
-  font-weight: 600;
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  border-radius: 4rem;
-  padding-top: .7rem;
-  padding-bottom: .7rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .photographer-tile-component,
 .media-group,
 .photographer-tile, a {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .profile-icon-image {
@@ -66,9 +69,8 @@
 
 /* HOME PAGE - BODY */
 .home-body {
-  margin: 60px;
-  padding-top: -20px;
-  padding-bottom: 2rem;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .home-title {
@@ -133,19 +135,16 @@
 /* FOOTER  */
 footer {
   display: block;
-  border-top: 1px solid rgb(0, 0, 0);
+  background-color: #333332;
   text-align: center;
-  margin-left: 60px;
-  margin-right: 60px;
-}
-
-.footer {
-  padding: 20px;
+  padding:  30px 0px;
+  margin-top: 30px;
 }
 
 .pinterest img {
   height: 2rem;
   width: 2rem;
+  color: white;
 }
 
 .instagram img {
@@ -280,7 +279,7 @@ footer {
 /* PHOTOGRAPHER TILE  */
 .photographer-tile-container {
   text-align: center;
-  background-color: #000000;
+  background-color: #dddddd;
 }
 
 .photographer-tile-container:hover {
@@ -289,18 +288,17 @@ footer {
 
 .photographer-tile-profile-pic {
   width: 100%;
-  border: 2px rgb(227, 226, 226) solid;
 }
 
 .photographer-tile-full-name {
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 35px;
 }
 
 .photographer-tile-category {
   font-weight: 400;
-  color: rgb(225, 225, 225);
+  color: rgb(0, 0, 0);
 }
 
 /* SIGN IN  */

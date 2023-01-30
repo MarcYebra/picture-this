@@ -7,18 +7,23 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class='top-bar-header'>
+  <a href='/photographers' class='top-bar-header text'>Visit our Featured Photographers of the Month</a>
+</div>
+
   <div class='home-top-bar'>
-  <div class='top-bar-left'></div>
-  <div class='home-logo'>
-    <a href="/"><%= image_tag("https://picture-this-production.s3.amazonaws.com/Icons/updated-logo.png", alt: "Logo")%></a>
-  </div>
+    <div class='top-bar-left'></div>
+      <div class='home-logo'>
+        <a href="/"><%= image_tag("https://picture-this-production.s3.amazonaws.com/Icons/updated-logo.png", alt: "Logo")%></a>
+      </div>
+    <div class='top-bar-right'></div>
+    
   <div class='home-sign-in-sign-up'>
       <ul>
         <%- if current_user -%>
-          <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, :class => 'home-sign-in-button' %>
+          <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, :class => 'home-sign-buttons' %>
         <%- else -%>
-          <%= link_to 'Sign In', new_user_session_path, :class => 'home-sign-in-button' %> 
-          <%= link_to 'Sign Up', new_user_registration_path, :class => 'home-sign-up-button'  %>
+          <%= link_to 'Sign In', new_user_session_path, :class => 'home-sign-buttons'  %> / <%= link_to 'Sign Up', new_user_registration_path, :class => 'home-sign-buttons'  %>
         <%- end -%>
       </ul>
       </div>
@@ -43,14 +48,12 @@
   <%- end -%>
   <%= javascript_pack_tag 'application' %>
 
-  <div class='footer'>
   <footer>
     <div class="icons">
-      <a href="https://www.pinterest.com/Picture_This_/" target="_blank" class="pinterest"><%= image_tag("https://picture-this-production.s3.amazonaws.com/Icons/Pinterest.png", alt: "pinterest")%></a>
-      <a href="https://www.instagram.com/instagram/?hl=en" target="_blank" class="instagram"><%= image_tag("https://picture-this-production.s3.amazonaws.com/Icons/instagram.png", alt: "instagram")%></a>
-      <a href="https://www.linkedin.com/in/marcyebra/" target="_blank" class="linkedin"><%= image_tag("https://picture-this-production.s3.amazonaws.com/Icons/linkedin.png", alt: "Linkedin")%></a>
+      <a href="https://www.pinterest.com/Picture_This_/" target="_blank" class="pinterest"><%= image_tag("https://picture-this-production.s3.amazonaws.com/Icons/white-pinterest-logo-png--30.png", alt: "pinterest")%></a>
+      <a href="https://www.instagram.com/instagram/?hl=en" target="_blank" class="instagram"><%= image_tag("https://picture-this-production.s3.amazonaws.com/Icons/instagram-logo-white.png", alt: "instagram")%></a>
+      <a href="https://www.linkedin.com/in/marcyebra/" target="_blank" class="linkedin"><%= image_tag("https://picture-this-production.s3.amazonaws.com/Icons/linkedin-logo-white.png", alt: "Linkedin")%></a>
     </div>
   </footer>
-</div>
 </body>
 </html>
