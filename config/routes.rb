@@ -10,8 +10,9 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :photographers, only: [:index, :show, :create] do
-      resources :reviews, only: [:create, :show, :destroy] 
-      resources :images, only: [:index, :show, :create]
+        resources :images, only: [:index] do 
+          resources :reviews, only: [:create, :show, :destroy] 
+        end
       end
     end
   end 

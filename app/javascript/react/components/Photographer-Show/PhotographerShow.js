@@ -44,6 +44,10 @@ const PhotographerShow = (props) => {
         </div>    
       </div>
 
+      <div> Photographers Images
+        <img src={props.photo} />
+      </div>
+
       <div className='review-show-button-container'>
         <h3 className='review-show-title'>Ratings & Reviews</h3>
           <ReviewForm addNewReview = {props.addNewReview} reviewButton = {props.reviewButton} />

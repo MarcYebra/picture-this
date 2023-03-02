@@ -18,7 +18,7 @@ class Api::V1::PhotographersController < ApplicationController
 
   def show
     render json: Photographer.find(params[:id]), serializer: PhotographerShowSerializer, include: ['reviews.user']
-end
+  end
 
 private 
 
