@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get '/photographers/:id/', to: 'static_pages#index'
   get '/photographers/:id/edit', to: 'photographers#edit', as: 'edit_photographers'
   get '/photographers/new', to: 'static_pages#index'
+  get '/about', to: 'static_pages#index'
 
   namespace :api do
     namespace :v1 do
@@ -14,6 +15,8 @@ Rails.application.routes.draw do
           resources :reviews, only: [:create, :show, :destroy] 
         end
       end
+
+      resources :about, only: [:index, :show]
     end
   end 
 end
