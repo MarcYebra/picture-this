@@ -157,6 +157,17 @@ footer {
   width: 2.5rem;
 }
 
+.faq-color {
+  color: white;
+}
+
+.about-color {
+  color: white;
+}
+
+.footer-divider {
+  color: white;
+}
 /* Photographer Index Page  */
 .photographer-index-sign-up-button {
   position: relative;
