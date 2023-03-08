@@ -627,3 +627,22 @@ grid-template-columns: repeat(2, 2fr);
   text-decoration: underline;
   opacity: 70%;
 }
+
+/* FAQ */
+.faq-container {
+  margin: 0px 90px 0px 90px;
+}
+
+.faq-top-header {
+  text-align: center;
+  margin-top: 25px;
+  border-bottom: 0.5px solid rgb(197, 197, 197);
+}
+
+.faq-main-questions-wrapper {
+  margin-top: 25px;
+}
+
+.faq-main {
+  margin-bottom: 20px;
+}
