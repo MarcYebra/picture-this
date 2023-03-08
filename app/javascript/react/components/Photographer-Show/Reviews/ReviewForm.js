@@ -8,6 +8,8 @@ const ReviewForm = (props) => {
     body: "",
     rating: ""
   })
+  const [displayForm, setDisplayForm] = useState("hide")
+  const [errors, setErrors] = useState({})
 
   const handleFormChange = (event) => {
     setNewReview({
@@ -16,8 +18,6 @@ const ReviewForm = (props) => {
     })
   }
 
-  const [displayForm, setDisplayForm] = useState("hide")
-
   const displayReviewForm = () => {
     if (displayForm === 'hide') {
       setDisplayForm('show')
@@ -25,8 +25,6 @@ const ReviewForm = (props) => {
       setDisplayForm('hide') 
     }
   }
-
-  const [errors, setErrors] = useState({})
 
   const errorForBlankReview = () => {
     let submitErrors = {}

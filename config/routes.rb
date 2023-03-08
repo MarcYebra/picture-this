@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get '/photographers/:id/edit', to: 'photographers#edit', as: 'edit_photographers'
   get '/photographers/new', to: 'static_pages#index'
   get '/about', to: 'static_pages#index'
-  get '/question', to: 'static_pages#index'
+  get '/questions', to: 'static_pages#index'
 
   namespace :api do
     namespace :v1 do
@@ -16,7 +16,10 @@ Rails.application.routes.draw do
           resources :images, only: [:index, :show]  
         end
       resources :about, only: [:index, :show]
-      resources  :question, only: [:index, :show, :create]
+      resources  :questions, only: [:index, :show, :create]
     end
   end 
 end
+
+
+
