@@ -646,3 +646,40 @@ grid-template-columns: repeat(2, 2fr);
 .faq-main {
   margin-bottom: 20px;
 }
+
+/* ABOUT */
+
+
+.about-grid {
+  margin-left: 60px;
+  margin-right: 60px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  display: grid;
+  gap: 1.5rem; 
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about-info-wrapper {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.about-header {
+  border-bottom: 0.5px solid rgb(197,197,197);
+  margin: auto;
+}
+
+.about-picture-this-description {
+  margin-top: 10px;
+}
+
+.about-developer-description {
+margin-top: 10px;
+}
+
+.marc-resize {
+  width: 30rem;
+  margin: auto;
+}
+
