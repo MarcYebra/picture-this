@@ -4,7 +4,7 @@ const Celebrity = (props) => {
 
   return (
     <div>
-
+      Celebrity
     </div>
   )
 }

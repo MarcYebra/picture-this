@@ -4,7 +4,7 @@ const Event = (props) => {
 
   return (
     <div>
-
+      Event
     </div>
   )
 }

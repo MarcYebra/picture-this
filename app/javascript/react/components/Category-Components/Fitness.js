@@ -4,7 +4,7 @@ const Fitness = (props) => {
 
   return (
     <div>
-
+      Fitness
     </div>
   )
 }
