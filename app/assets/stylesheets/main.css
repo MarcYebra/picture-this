@@ -237,21 +237,22 @@ footer {
 .categories-container {
   text-align: center;
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
   padding-left: 60px;
   padding-right: 60px;
-  padding-top:24px;
+  padding-top:20px;
+  padding-bottom: 20px;
 }
 
-.categories-button {
+.category-button {
   border: 2px solid black;
   font-weight: 500;
   padding: 5px;
   border-radius: 3rem;
-  margin: 4px;
+  margin: 5px;
 }
 
-.categories-button:hover {
+.category-button:hover {
   background-color: black;
   color: white;
 }
@@ -694,4 +695,3 @@ overflow-wrap: break-word;
 .marc-resize {
   width: 30rem;
 }
-
