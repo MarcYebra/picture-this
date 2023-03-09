@@ -138,7 +138,6 @@ footer {
   background-color: #333332;
   text-align: center;
   padding:  30px 0px;
-  margin-top: 30px;
 }
 
 .pinterest img {
@@ -649,37 +648,50 @@ grid-template-columns: repeat(2, 2fr);
 
 /* ABOUT */
 
-
 .about-grid {
   margin-left: 60px;
   margin-right: 60px;
-  padding-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 30px;
   display: grid;
   gap: 1.5rem; 
   grid-template-columns: repeat(2, 1fr);
 }
 
 .about-info-wrapper {
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  border-left:1px solid rgb(197,197,197);
+  padding-left: 25px;
 }
 
 .about-header {
-  border-bottom: 0.5px solid rgb(197,197,197);
-  margin: auto;
+  text-align: left;
+  font-size: 60px;
+  font-weight: 600;
+  font-family: 'Playfair Display';
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .about-picture-this-description {
   margin-top: 10px;
+  color: rgb(92, 92, 95)var(--text-medium);
+  font: 1.3rem/1.8 var(--font-body);
+  letter-spacing: .06rem;
+  margin-bottom: 10px;
+  overflow-wrap: break-word;
 }
 
 .about-developer-description {
 margin-top: 10px;
+color: rgb(92, 92, 95)var(--text-medium);
+font: 1.3rem/1.8 var(--font-body);
+letter-spacing: .06rem;
+margin-bottom: 10px;
+overflow-wrap: break-word;
 }
 
 .marc-resize {
   width: 30rem;
-  margin: auto;
 }
 
