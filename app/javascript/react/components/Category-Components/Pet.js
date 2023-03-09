@@ -4,7 +4,7 @@ const Pet = (props) => {
 
   return (
     <div>
-
+      Pet
     </div>
   )
 }

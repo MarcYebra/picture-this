@@ -4,7 +4,7 @@ const Graduation = (props) => {
 
   return (
     <div>
-
+      Graduation
     </div>
   )
 }

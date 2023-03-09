@@ -4,7 +4,7 @@ const Weddings = (props) => {
 
   return (
     <div>
-
+      Wedding
     </div>
   )
 }

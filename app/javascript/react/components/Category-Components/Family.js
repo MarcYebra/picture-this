@@ -4,7 +4,7 @@ const Family = (props) => {
 
   return (
     <div>
-
+      Family
     </div>
   )
 }
