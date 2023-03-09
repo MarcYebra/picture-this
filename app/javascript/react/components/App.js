@@ -7,6 +7,7 @@ import About from './About'
 import QuestionsIndex from './QuestionsIndex.js'
 import Celebrity from './Category-Components/Celebrity'
 import Engagement from './Category-Components/Engagement'
+import Event from './Category-Components/Event'
 import Family from './Category-Components/Family'
 import Fashion from './Category-Components/Fashion'
 import Fitness from './Category-Components/Fitness'
@@ -16,6 +17,7 @@ import Pet from './Category-Components/Pet'
 import Portrait from './Category-Components/Portrait'
 import Sport from './Category-Components/Sport'
 import Weddings from './Category-Components/Wedding'
+
 
 export const App = (props) => {
   return (
