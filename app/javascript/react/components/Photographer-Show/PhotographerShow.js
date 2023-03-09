@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import ReviewTile from "./Reviews/ReviewTile"
 import ReviewForm from "./Reviews/ReviewForm"
 
@@ -44,8 +44,8 @@ const PhotographerShow = (props) => {
         </div>    
       </div>
 
-      <div> Photographers Images
-        <img src={props.photo} />
+      <div> Portfolio
+        <img src={props.photo_url} />
       </div>
 
       <div className='review-show-button-container'>
