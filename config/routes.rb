@@ -26,11 +26,10 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :photographers, only: [:index, :show, :create] do
-        resources :reviews, only: [:create, :show, :destroy] 
-          resources :images, only: [:index, :show]  
+        resources :reviews, only: [:create, :show, :destroy]  
         end
       resources :about, only: [:index, :show]
-      resources  :questions, only: [:index, :show, :create]
+      resources :questions, only: [:index, :show, :create]
       resources :celebrity, only: [:index, :show]
       resources :engagement, only: [:index, :show]
       resources :event, only: [:index, :show]
