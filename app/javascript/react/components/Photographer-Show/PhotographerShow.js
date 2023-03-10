@@ -45,7 +45,6 @@ const PhotographerShow = (props) => {
       </div>
 
       <div> Portfolio
-        <img src={props.photo_url} />
       </div>
 
       <div className='review-show-button-container'>
