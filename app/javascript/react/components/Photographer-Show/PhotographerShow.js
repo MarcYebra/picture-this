@@ -44,9 +44,6 @@ const PhotographerShow = (props) => {
         </div>    
       </div>
 
-      <div> Portfolio
-      </div>
-
       <div className='review-show-button-container'>
         <h3 className='review-show-title'>Ratings & Reviews</h3>
           <ReviewForm addNewReview = {props.addNewReview} reviewButton = {props.reviewButton} />
