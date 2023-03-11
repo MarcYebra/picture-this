@@ -46,11 +46,12 @@ const PhotographerShow = (props) => {
 
       <div className='review-show-button-container'>
         <h3 className='review-show-title'>Ratings & Reviews</h3>
-          <ReviewForm addNewReview = {props.addNewReview} reviewButton = {props.reviewButton} />
+          <ReviewForm  addNewReview = {props.addNewReview} reviewButton = {props.reviewButton} />
       </div>
       <div className='review-show-container'>
       {reviewTiles}
       </div>
+      <div className="review-show-write-review"></div>
     </div>
   )
 }

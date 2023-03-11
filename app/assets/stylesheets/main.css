@@ -167,6 +167,10 @@ footer {
 .footer-divider {
   color: white;
 }
+
+.footer-nav {
+  margin-top: 5px;
+}
 /* Photographer Index Page  */
 .photographer-index-sign-up-button {
   position: relative;
@@ -567,6 +571,10 @@ grid-template-columns: repeat(2, 2fr);
   margin-top: 24px;
 }
 
+.review-show-write-review {
+  margin-top: 5rem;
+}
+
 /* REVIEW FORM  */
 .review-form-button {
   text-decoration: underline;
@@ -603,8 +611,12 @@ grid-template-columns: repeat(2, 2fr);
 
 .review-tile-title-body {
   text-align: left;
-  padding-left: 7rem;
+  padding-left: 9rem;
   padding-right: 7rem;
+}
+
+.review-tile-inline {
+  display: inline-block;
 }
 
 .review-tile-title {
@@ -613,6 +625,15 @@ grid-template-columns: repeat(2, 2fr);
   letter-spacing: .06rem;
   margin-bottom: 10px;
   font-weight: bold;
+  display: inline-block;
+}
+
+.review-tile-rating {
+  display: inline-block;
+  color: var(--text-dark);
+  font: 1.6rem/1.3 var(--font-body-bold);
+  letter-spacing: .06rem;
+  margin-bottom: 10px;
 }
 
 .review-tile-body {
@@ -636,15 +657,34 @@ grid-template-columns: repeat(2, 2fr);
 .faq-top-header {
   text-align: center;
   margin-top: 25px;
+  margin-bottom: 25px;
   border-bottom: 0.5px solid rgb(197, 197, 197);
+  font: 1.6rem/1.3 var(--font-body-bold);
+  letter-spacing: .06rem;
+  font-weight: bold;
 }
 
-.faq-main-questions-wrapper {
-  margin-top: 25px;
+.faq-main-wrapper {
+  border-bottom: 0.5px solid rgb(197, 197, 197);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .faq-main {
-  margin-bottom: 20px;
+  font: 1.6rem/1.3 var(--font-body-bold);
+  letter-spacing: .06rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.faq-main-answer {
+  font: 1.6rem/1.3 var(--font-body-bold);
+  letter-spacing: .06rem;
+  margin-bottom: 10px;
+}
+
+.faq-community-question-header {
+  text-align: center;
 }
 
 /* ABOUT */
