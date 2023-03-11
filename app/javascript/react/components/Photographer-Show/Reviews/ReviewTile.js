@@ -43,9 +43,8 @@ if (props.currentUser) {
       <div className='review-tile-username'>{props.username} 
         <div>{props.created_at}</div>
       </div>
-      <div>{props.rating}/5</div>
       <div className='review-tile-title-body'>
-        <div className='review-tile-title'>{props.title}</div>
+        <div className='review-tile-title'>{props.title}</div> | <div className='review-tile-rating'>{props.rating}/5</div>
         <div className='review-tile-body'>{props.body}</div>
         <button onClick={handleDeleteReview} className='review-tile-delete-review'>
           Delete

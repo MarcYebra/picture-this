@@ -10,22 +10,34 @@ const QuestionsIndex = (props) => {
   return(
     <div className='faq-container'>
 
-    <h1 className='faq-top-header'>Have Any Questions?</h1>
-
-    <div className='faq-main'>
-      <h2>How long will it take until I receive my edited photos?</h2>
-      <li>{answerOne}</li>
-    </div>
-      
-    <div className='faq-main'>
-      <h2>What if I don't like the edits made by the photographer?</h2>
-      <li>{answerTwo}</li>
+    <div  className='faq-top-header'>
+    <h1>FAQ</h1>
     </div>
 
-    <div className='faq-main'>
-      <h2>What happens if I need to cancel or reschedule my shoot?</h2>
-      <li>{answerThree}</li>
+    <div className='faq-main-wrapper'>
+      <div className='faq-main'>
+        <h2>How long will it take until I receive my edited photos?</h2>
+      </div>
+        <p className='faq-main-answer'>{answerOne}</p>
     </div>
+
+    <div className='faq-main-wrapper'> 
+      <div className='faq-main'>
+        <h2>What if I don't like the edits made by the photographer?</h2>
+      </div>
+        <p className='faq-main-answer'>{answerTwo}</p>
+    </div>
+
+    <div className='faq-main-wrapper'>
+      <div className='faq-main'>
+        <h2>What happens if I need to cancel or reschedule my shoot?</h2>
+      </div>
+        <p className='faq-main-answer'>{answerThree}</p>
+      </div>
+
+      <div className='faq-community-question-header'>
+        <h2>Have A Question? Ask Our Community!</h2>
+      </div>
 
     </div>
   )
