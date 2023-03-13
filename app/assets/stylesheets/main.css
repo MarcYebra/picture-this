@@ -498,24 +498,24 @@ label {
   padding-top: 30px;
 }
 
-.photographer-show-wrapper {
+.photographer-show-container {
 display: grid;
-grid-template-columns: repeat(2, 2fr);
+grid-template-columns: repeat(2, 1fr);
+
 }
 
 .photographer-show-profile-pic {
-  width:30vw;
-  margin-left: 10vw;
+  width:500px;
+  margin: auto;
 }
 
 .photographer-show-info {
-  height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 5rem;
   text-align: center;
+  margin: auto;
 }
 
 .photographer-show-full-name {

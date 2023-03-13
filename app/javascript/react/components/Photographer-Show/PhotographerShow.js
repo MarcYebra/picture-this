@@ -21,7 +21,8 @@ const PhotographerShow = (props) => {
 
   return (
     <div className='photographer-show-body'>
-      <div className='photographer-show-wrapper'>
+
+      <div className='photographer-show-container'>
         <div className='photographer-show-profile-pic'>
           <img src={props.profile_photo} />
         </div>
@@ -44,6 +45,8 @@ const PhotographerShow = (props) => {
         </div>    
       </div>
 
+
+
       <div className='review-show-button-container'>
         <h3 className='review-show-title'>Ratings & Reviews</h3>
           <ReviewForm  addNewReview = {props.addNewReview} reviewButton = {props.reviewButton} />
@@ -52,6 +55,7 @@ const PhotographerShow = (props) => {
       {reviewTiles}
       </div>
       <div className="review-show-write-review"></div>
+
     </div>
   )
 }
