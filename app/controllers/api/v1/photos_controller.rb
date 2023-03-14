@@ -1,5 +1,5 @@
 class Api::V1::PhotosController < ApiController 
-  before_action authenticate_user, only: [:show]
+  before_action :authenticate_user, only: [:show]
   skip_before_action :verify_authenticity_token
 
   def index 
