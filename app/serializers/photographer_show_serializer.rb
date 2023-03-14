@@ -6,5 +6,6 @@ class PhotographerShowSerializer < ActiveModel::Serializer
   end
   
   has_many :reviews  
+  has_many :photos
 
 end
