@@ -1,6 +1,6 @@
 class Photo < ApplicationRecord 
+  validates :photo, presence: true
   
-  validates :photo
   belongs_to :photographer 
 
 end
