@@ -11,9 +11,15 @@ class Api::V1::PhotosController < ApiController
     render json: photo 
   end
 
+  def create 
+    photo = Photo.new(photo_params)
+    photo.save
+    render json: photo
+  end
+
   private
 
-  def photo_param
+  def photo_params
     params.permit(:photo)
   end
 
