@@ -3,7 +3,6 @@ class Api::V1::ReviewsController < ApiController
   before_action :authenticate_user, only: [ :show, :create, :edit, :update, :destroy ]
   skip_before_action :verify_authenticity_token
 
-
   def create
     photographer = Photographer.find(params[:photographer_id])
     review = Review.new(review_params)

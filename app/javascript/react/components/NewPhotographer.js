@@ -42,6 +42,10 @@ const NewPhotographer = (props) => {
 
   const handleSubmitNewPhotographer = async (event) => {
     event.preventDefault()
+    let formPayLoad = {
+      photographer: newPhotographer 
+    }
+    
     try {
       const response = await fetch('/api/v1/photographers', {
         method: "POST",
