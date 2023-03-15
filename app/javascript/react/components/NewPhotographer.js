@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import { Redirect } from 'react-router-dom'
 
 const NewPhotographer = (props) => {
@@ -11,7 +11,6 @@ const NewPhotographer = (props) => {
     location: "",
   })
 
-// Locations photographers can select from 
   const locations = ['', 'Allston', 'Beacon Hill', 'Back Bay', 'Bay Village', 'Beacon Hill', 'Brighton', 'Cambridge', 'Charlestown', 'Chinatown-Leather District', 'Dorchester', 'Downtown', 'East Boston', 'Fenway-Kenmore', 'Hyde Park', 'Jamaica Plain', 'Mid-Dorchester', 'North End', 'Roslindale', 'Roxbury', 'South Boston', 'South End', 'West End', 'West Roxbury', 'Wharf District' ]
 
   const locationOptions = locations.map(location => {
@@ -22,7 +21,6 @@ const NewPhotographer = (props) => {
       )
     })
 
-// Categories photographers can select from
   const categories = ['', 'Fashion', 'Portraits', 'Graduation', 'Family', 'Pets', 'Sports', 'Engagement', 'Food', 'Event', 'Wedding', 'Fitness', 'Influencer/Celebrity']
 
   const categoryOptions = categories.map(category => {
@@ -40,42 +38,37 @@ const NewPhotographer = (props) => {
     })
   }
 
-  const handleSubmitNewPhotographer = async (event) => {
-    event.preventDefault()
-    let formPayLoad = {
-      photographer: newPhotographer 
+const onNewPhotographerSubmitted = (photographer) => {
+  fetch(`/api/v1/photographers` , {
+    method: 'POST',
+    credentials: 'same-origin',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(photographer)
+  })
+  .then(response => {
+    if(response.ok) {
+      return response
+    } else {
+      let errorMessage = `${response.status} (${response.statusText})` ,
+      error = new Error(errorMessage)
+      throw(error)
     }
-    
-    try {
-      const response = await fetch('/api/v1/photographers', {
-        method: "POST",
-        credentials: "same-origin",
-        headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json" 
-        },
-        body: JSON.stringify({ photographer: newPhotographer })
-      })
-      if (!response.ok) {
-        const errorMessage = `${response.status} (${response.statusText})`
-        const error = new Error(errorMessage)
-        throw(error)
-      }
-
-      const photographerBody = await response.json()
-  
-      if (photographerBody.photographer) {
-        console.log("Added Successfully!")
-        setRedirect(photographerBody.photographer.id)
-      } else if (photographerBody.error[0] === "You must be a photographer") {
-        alert("You must be a photographer")
-      }     
-    } catch(err) {
-      console.error(`Error in fetch: ${err.message}`)
+  })
+  .then(response => response.json())
+  .then(photographerBody => {
+    if (photographerBody.photographer) {
+      setRedirect(photographerBody.photographer.id)
+    } else if (photographerBody.error) {
+      setErrorList(photographerBody.error)
     }
-  }
+  })
+  .catch(error => console.error(`Error in fetch: ${error.message}`))
+}
 
-  if (redirect) {
+  if (redirect !== null) {
     return <Redirect to={`/photographers/${redirect}`} />
   }
 
@@ -84,7 +77,7 @@ const NewPhotographer = (props) => {
         <div className='new-photographer-page'>
           <h2 className='new-photographer-title'>New Photographer</h2>
             <p className='new-photographer-description'>Are you a photographer? Create an account so people can book you!</p>
-            <form onSubmit={handleSubmitNewPhotographer}>
+            <form onSubmit={onNewPhotographerSubmitted}>
               <label>
                 <div className='new-photographer-text'>First Name</div>
                   <input type="text" name="first_name" onChange={handleInputChange} value={newPhotographer.first_name}/>
