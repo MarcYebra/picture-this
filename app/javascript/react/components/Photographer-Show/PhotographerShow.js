@@ -1,6 +1,7 @@
 import React from "react"
 import ReviewTile from "./Reviews/ReviewTile"
 import ReviewForm from "./Reviews/ReviewForm"
+import PhotoUpload from "./PhotoUpload"
 
 const PhotographerShow = (props) => {
   const reviewTiles = props.reviews.map((review) => {
