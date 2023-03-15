@@ -5,19 +5,18 @@ class Api::V1::PhotographersController < ApplicationController
     render json: Photographer.all
   end
 
+  def show
+    render json: Photographer.find(params[:id]), serializer: PhotographerShowSerializer, include: ['reviews.user']
+  end
+
   def create
     photographer = Photographer.new(photographer_params)
     photographer.user = current_user
-
     if photographer.save
       render json: photographer
     else 
       render json: {errors: photographer.errors.full_messages.to_sentence}
     end
-  end
-
-  def show
-    render json: Photographer.find(params[:id]), serializer: PhotographerShowSerializer, include: ['reviews.user']
   end
 
 private 
